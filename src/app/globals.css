@@ -1,0 +1,208 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Sofia Sans";
+  src: url("/fonts/SofiaSans-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Sofia Sans";
+  src: url("/fonts/SofiaSans-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Sofia Sans";
+  src: url("/fonts/SofiaSans-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Sofia Sans";
+  src: url("/fonts/SofiaSans-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Sofia Sans";
+  src: url("/fonts/SofiaSans-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Sofia Sans";
+  src: url("/fonts/SofiaSans-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Sofia Sans";
+  src: url("/fonts/SofiaSans-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+
+/* Add Italic if needed */
+@font-face {
+  font-family: "Sofia Sans";
+  src: url("/fonts/SofiaSans-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+:root {
+  --background: #111;
+  --foreground: #252525;
+  --cuYellow: #f8ce4c;
+  --cuRed: #ec5a54;
+  --cuGreen: #00bf58;
+  --cuPurple: #6b34cd;
+}
+body {
+  background-color: var(--background);
+}
+
+body:after {
+  animation: grain 8s steps(10) infinite;
+  background-image: url("/background/paper_1.png");
+  content: "";
+  height: 300%;
+  left: -50%;
+  opacity: 0.03;
+  position: fixed;
+  top: -100%;
+  z-index: -10;
+  width: 300%;
+}
+
+@keyframes grain {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+  10% {
+    transform: translate(-5%, -10%);
+  }
+  20% {
+    transform: translate(-15%, 5%);
+  }
+  30% {
+    transform: translate(7%, -25%);
+  }
+  40% {
+    transform: translate(-5%, 25%);
+  }
+  50% {
+    transform: translate(-15%, 10%);
+  }
+  60% {
+    transform: translate(15%, 0%);
+  }
+  70% {
+    transform: translate(0%, 15%);
+  }
+  80% {
+    transform: translate(3%, 35%);
+  }
+  90% {
+    transform: translate(-10%, 10%);
+  }
+}
+*::-webkit-scrollbar {
+  width: 1px;
+  height: 1px;
+}
+
+*::-webkit-scrollbar-track {
+  background: none;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: none;
+  border-radius: 1rem;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background: #b2b2b2;
+}
+
+@keyframes waving {
+  0% {
+    transform: rotate(60deg);
+  }
+
+  100% {
+    transform: rotate(80deg);
+  }
+}
+
+.wave {
+  transform-origin: 80% 75%;
+  animation: waving 0.5s both alternate infinite ease-in-out;
+}
+
+.section-home-hero {
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 170vh;
+  position: relative;
+}
+
+.home-hero-component {
+  align-items: center;
+  min-height: 100vh;
+  padding-left: 5%;
+  padding-right: 5%;
+  display: flex;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+.container-home-hero {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.home-hero-content {
+  text-align: center;
+  width: 100%;
+}
+
+.hero-header {
+  line-height: 0.9;
+}
+
+.scroll-down-button {
+  position: absolute;
+  top: auto;
+  bottom: 3rem;
+  left: 0%;
+  right: 0%;
+  transform: rotate(180deg);
+}
+
+.home-hero-button-wrapper {
+  z-index: 4;
+  justify-content: center;
+  display: flex;
+  position: absolute;
+  top: auto;
+  bottom: 27%;
+  left: 0%;
+  right: 0%;
+}
+.rotate-button {
+  transform: rotate(-10deg);
+}
