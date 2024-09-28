@@ -25,7 +25,7 @@ function StayEngaged() {
 
   return (
     <div className=" flex items-center w-11/12 py-9 justify-between">
-      <div className=" gap-10 text-white flex w-full">
+      <div className=" gap-10 text-white flex w-full max-sm:flex-col">
         <div className=" w-10/12  rounded-2xl overflow-hidden">
           <Image
             src={
@@ -34,7 +34,7 @@ function StayEngaged() {
             alt="engaged"
             height={500}
             width={500}
-            className=" object-cover h-full w-full"
+            className=" object-cover h-full w-auto max-sm:w-screen max-sm:h-auto"
           />
         </div>
         <div className=" flex flex-col text-6xl items-start justify-between font-extrabold w-full  gap-8">

@@ -75,7 +75,7 @@ function Header() {
             width={110}
           />
         </div>
-        <div className="flex max-md:hidden items-center justify-center gap-6">
+        <div className="flex max-sm:hidden items-center justify-center gap-6">
           {headerButtons.map(({ title, variant, className, link }) => (
             <div onClick={() => handleNavigate(link)} key={title}>
               <Button

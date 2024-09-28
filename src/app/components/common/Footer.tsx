@@ -6,6 +6,7 @@ import Image from "next/image";
 import Button from "@/app/components/ui/Button";
 import Link from "next/link";
 import { headerButtons } from "@/app/utils/lib/utils";
+
 const bottomNav = [
   {
     title: "Work with us",
@@ -63,7 +64,7 @@ function Footer() {
         alt="fetchLab logo"
         height={500}
         width={500}
-        className=" h-full w-full"
+        className=" h-full w-full max-sm:h-auto max-sm:w-[380px]"
       />
       <p className=" font-sofiaSans font-medium text-zinc-100 ">
         Copyright {new Date().getFullYear()} © fetchlab

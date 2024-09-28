@@ -11,7 +11,7 @@ function WorkInfo() {
   };
 
   return (
-    <div className=" flex items-start w-11/12 justify-between">
+    <div className=" flex max-md:flex-col max-md:gap-y-4 items-start w-11/12 justify-between">
       <div className=" font-extrabold gap-4 flex flex-col text-5xl text-white ">
         <p>MoodRobe</p>
         <div className=" flex font-sofiaSans items-center gap-2">
@@ -42,7 +42,7 @@ function WorkInfo() {
           }}
           className="overflow-hidden"
         >
-          <p className="max-w-lg font-sofiaSans text-justify text-lg font-light">
+          <p className="max-w-lg max-md:max-w-screen-md font-sofiaSans text-justify text-lg font-light">
             Minimalism in fashion isn’t just a trend—it’s a lifestyle. That’s
             the foundation Moodrobe was built on, offering blank, stylish
             T-shirts that let individuality shine through simplicity. When
