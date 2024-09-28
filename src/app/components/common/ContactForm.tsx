@@ -36,14 +36,14 @@ function ContactForm() {
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      <div className="w-11/12 flex items-start justify-between relative group">
-        <div className="text-9xl font-extrabold text-white leading-ms tracking-ms flex flex-col  transition-transform duration-300">
+      <div className="w-11/12 flex max-md:flex-col max-md:gap-y-6 items-start justify-between relative group">
+        <div className="text-9xl max-sm:text-5xl font-extrabold text-white leading-ms tracking-ms flex flex-col max-md:flex-row max-md:items-baseline max-md:justify-center max-md:flex-wrap max-md:gap-x-4 transition-transform duration-300">
           <p>Let&apos;s</p>
           <p className="-mt-5">partner</p>
           <div className=" flex gap-4  -mt-4 items-center">
             <p className="">up</p>
 
-            <div className=" relative h-full mb-7">
+            <div className=" relative h-full mb-7 max-md:hidden">
               <Image
                 src="/contact/eye-cover.png"
                 alt="eye cover"
@@ -53,7 +53,7 @@ function ContactForm() {
               />
               <Image
                 src="/contact/eye.png"
-                className=" absolute  inset-0 m-auto "
+                className=" absolute inset-0 m-auto"
                 alt="eye"
                 height={100}
                 style={{
@@ -64,7 +64,7 @@ function ContactForm() {
             </div>
           </div>
         </div>
-        <div className="flex  flex-col w-1/2 gap-4">
+        <div className="flex flex-col max-md:w-full w-1/2 gap-4">
           <input
             type="text"
             className="bg-foreground  font-sofiaSans outline-none placeholder:text-base text-base font-normal text-white rounded-full p-3 w-full px-5"

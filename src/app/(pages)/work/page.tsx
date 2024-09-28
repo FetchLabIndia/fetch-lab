@@ -33,6 +33,7 @@ function Page() {
 
       <Project />
       <StayEngaged />
+
       <hr className="w-full border-t border-zinc-800" />
       <Footer />
     </>

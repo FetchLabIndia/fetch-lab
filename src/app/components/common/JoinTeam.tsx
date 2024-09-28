@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 function JoinTeam() {
   return (
     <div className=" w-11/12 rounded-3xl pt-10 mt-4 bg-cuGreen leading-ms tracking-ms text-center flex flex-col items-center justify-center font-extrabold relative text-7xl">
-      <div className=" -mt-4 absolute top-16 flex items-center justify-between w-6/12">
+      <div className=" -mt-4 absolute top-16 max-sm:-top-[1rem] flex items-center justify-between w-6/12">
         <Image src={"/team/yummy.png"} height={70} width={70} alt="thinking" />
         <Image src={"/team/happy.png"} height={80} width={80} alt="thinking" />
       </div>
@@ -16,17 +16,17 @@ function JoinTeam() {
           height={100}
           width={100}
           alt="thinking"
-          className=" -mt-4 absolute -bottom-11 -left-28"
+          className=" -mt-4 absolute -bottom-11 max-sm:left-[8rem] -left-28"
         />
         <Image
           src={"/team/rightDown.png"}
           height={70}
           width={70}
           alt="thinking"
-          className=" -mt-4 absolute -bottom-8 z-10  -right-24"
+          className=" -mt-4 absolute -bottom-8 z-10 -right-24 max-sm:right-[5rem] max-sm:-bottom-[11rem]"
         />
       </div>
-      <div className=" flex items-center gap-16 w-full justify-center">
+      <div className=" flex max-sm:flex-col items-center gap-16 w-full justify-center">
         <motion.div
           whileHover={{
             rotate: [0, 4, -4, 4, -4, 0],

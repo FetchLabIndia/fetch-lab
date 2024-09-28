@@ -18,7 +18,7 @@ export default function Accordion({
   return (
     <div className="flex flex-col w-full items-center mb-5 justify-center">
       <div
-        className="text-5xl border-t-2 tracking-ms py-7 pb-3 flex w-11/12 justify-between  cursor-pointer group"
+        className="text-5xl max-sm:text-3xl border-t-2 tracking-ms py-7 pb-3 flex w-11/12 justify-between  cursor-pointer group"
         onClick={() => setIsExpanded(!isExpanded)}
       >
         <p className="font-extrabold">{title}</p>
@@ -34,7 +34,7 @@ export default function Accordion({
               width={55}
               height={55}
               alt="down"
-              className="opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+              className="opacity-0 group-hover:opacity-100 max-sm:group-hover:hidden transition-opacity duration-500"
             />
           </motion.div>
           <p className="font-sofiaSans">0{index}</p>
