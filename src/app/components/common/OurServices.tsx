@@ -97,11 +97,13 @@ function OurServices() {
   return (
     <>
       <div className=" text-white text-center ">
-        <p className=" text-4xl mb-4 font-extrabold ">our services</p>
-        <p className=" text-lg font-sofiaSans font-light leading-ms my-2 text-zinc-100">
-          Our comprehensive range of services spans from strategically defining
-          your <br /> brand&apos;s future direction to empowering its growth and
-          success in every dimension.
+        <p className=" text-4xl mb-4 font-extrabold max-md:text-3xl">
+          our services
+        </p>
+        <p className=" text-lg font-sofiaSans max-md:px-2 max-md:text-base font-light leading-ms my-2 text-zinc-100">
+          Our comprehensive range of services
+          <br /> spans from strategically defining your brand&apos;s future
+          direction to empowering its growth and success in every dimension.
         </p>
       </div>
       <div className=" mt-12 flex flex-col items-center text-white w-full">

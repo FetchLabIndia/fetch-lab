@@ -16,9 +16,9 @@ function Home() {
       <WorkCarousel />
       <ClientMarquee />
       <OurServices />
-      <div className=" h-20"></div>
+      <div className=" h-20 max-md:h-0"></div>
       <Project />
-      <div className=" h-20"></div>
+      <div className=" h-20 max-md:h-0"></div>
       <StayEngaged />
       <hr className="w-full border-t border-zinc-800" />
       <Footer />

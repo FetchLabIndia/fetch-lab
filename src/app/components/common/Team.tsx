@@ -4,34 +4,18 @@ function Team() {
       <p className="font-extrabold text-4xl leading-ms tracking-ms ">
         Meet the <span className=" text-cuGreen">Visionaries</span>
       </p>
-      <div className=" flex items-center gap-10 text-base justify-center">
-        <div>
-          <div className=" w-[200px] h-[203px] border rounded-2xl"></div>
-          <div className=" mt-2">
-            <p className=" font-bold ">Govind Singh Bisht</p>
-            <p className=" font-sofiaSans  -mt-1 text-sm">
-              Creative Director - Design
-            </p>
+      <div className=" flex  flex-wrap items-center gap-10 text-base justify-center">
+        {Array.from(Array(3)).map((_, i) => (
+          <div key={i}>
+            <div className=" md:w-[200px] w-[150px] h-[150px] md:h-[203px] border rounded-2xl"></div>
+            <div className=" mt-2">
+              <p className=" font-bold ">Govind Singh Bisht</p>
+              <p className=" font-sofiaSans  -mt-1 text-sm">
+                Creative Director - Design
+              </p>
+            </div>
           </div>
-        </div>
-        <div>
-          <div className=" w-[200px] h-[203px] border rounded-2xl"></div>
-          <div className=" mt-2">
-            <p className=" font-bold ">Govind Singh Bisht</p>
-            <p className=" font-sofiaSans -mt-1 text-sm">
-              Creative Director - Design
-            </p>
-          </div>
-        </div>
-        <div>
-          <div className=" w-[200px] h-[203px] border rounded-2xl"></div>
-          <div className=" mt-2">
-            <p className=" font-bold ">Govind Singh Bisht</p>
-            <p className=" font-sofiaSans  -mt-1 text-sm">
-              Creative Director - Design
-            </p>
-          </div>
-        </div>
+        ))}
       </div>
     </div>
   );

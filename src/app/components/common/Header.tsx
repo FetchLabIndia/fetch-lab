@@ -73,6 +73,14 @@ function Header() {
             alt="fetchLab logo"
             height={110}
             width={110}
+            className=" hidden md:flex"
+          />
+          <Image
+            src={"/logos/Monogram(White).svg"}
+            alt="fetchLab logo"
+            height={30}
+            width={30}
+            className=" flex md:hidden"
           />
         </div>
         <div className="flex max-md:hidden items-center justify-center gap-6">

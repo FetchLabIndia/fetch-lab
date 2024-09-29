@@ -27,7 +27,7 @@ function WorkCarousel() {
         ref={scrollRef}
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
-        className=" relative flex w-full cursor-none transition-all duration-200 scroll-smooth overflow-scroll snap-mandatory snap-x gap-6 p-4 px-14 mb-11"
+        className=" relative flex w-full cursor-none transition-all duration-200 scroll-smooth overflow-scroll snap-mandatory snap-x gap-6 p-4 px-14 mb-11 max-md:mb-10 max-md:px-4"
       >
         <Image
           src={
@@ -49,7 +49,7 @@ function WorkCarousel() {
         />
       </div>
 
-      <div className=" flex -mt-10 text-white text-2xl w-full px-14 justify-between items-center ">
+      <div className=" flex -mt-10 text-white text-2xl w-full px-14 justify-between max-md:px-4 items-center ">
         <div
           onClick={handleScrollLeft}
           className=" rounded-full border-zinc-500 hover:border-zinc-100 transition-all duration-500 cursor-pointer border p-3"
@@ -68,7 +68,7 @@ function WorkCarousel() {
             isHovered ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0 }
           }
           transition={{ duration: 0.3 }}
-          className="absolute"
+          className="absolute "
           style={{
             left: `${cursorPos.x - 0}px`,
             top: `${cursorPos.y - 0}px`,

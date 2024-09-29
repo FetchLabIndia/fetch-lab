@@ -80,9 +80,9 @@ export const works = [
     ],
   },
   {
-    tags: ["Coming SOon"],
+    tags: ["Coming Soon"],
   },
   {
-    tags: ["Coming SOon"],
+    tags: ["Coming Soon"],
   },
 ];

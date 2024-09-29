@@ -18,10 +18,10 @@ export default function Accordion({
   return (
     <div className="flex flex-col w-full items-center mb-5 justify-center">
       <div
-        className="text-5xl border-t-2 tracking-ms py-7 pb-3 flex w-11/12 justify-between  cursor-pointer group"
+        className="text-5xl border-t-2 tracking-ms py-7 pb-3 flex w-11/12 justify-between cursor-pointer group"
         onClick={() => setIsExpanded(!isExpanded)}
       >
-        <p className="font-extrabold">{title}</p>
+        <p className="font-extrabold max-md:text-3xl">{title}</p>
         <div className="flex items-center gap-5">
           <motion.div
             animate={{
@@ -34,10 +34,10 @@ export default function Accordion({
               width={55}
               height={55}
               alt="down"
-              className="opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+              className="opacity-0 max-md:hidden group-hover:opacity-100 transition-opacity duration-500"
             />
           </motion.div>
-          <p className="font-sofiaSans">0{index}</p>
+          <p className="font-sofiaSans max-md:text-4xl">0{index}</p>
         </div>
       </div>
 
@@ -53,7 +53,7 @@ export default function Accordion({
               opacity: { duration: 0.3, ease: "easeInOut" },
             }}
           >
-            <div className="flex flex-wrap gap-2 gap-y-3 w-9/12">
+            <div className="flex flex-wrap gap-2 gap-y-3 max-md:w-11/12 w-9/12">
               {Data.map(({ title, bg }) => (
                 <div
                   key={title}
@@ -61,7 +61,7 @@ export default function Accordion({
                     backgroundColor: bg,
                     color: bg === "#6B34CD" ? "white" : "black",
                   }}
-                  className=" text-[12.5px] font-[900] p-[0.30rem] px-3 leading-ms rounded-full border-transparent border-2 transition-all duration-500 text-xl text-black"
+                  className=" text-[12.5px] max-md:text-xs font-[900] p-[0.30rem] px-3 leading-ms rounded-full border-transparent border-2 transition-all duration-500 text-xl text-black"
                 >
                   {title}
                 </div>

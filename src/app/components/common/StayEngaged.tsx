@@ -24,9 +24,9 @@ function StayEngaged() {
   }
 
   return (
-    <div className=" flex items-center w-11/12 py-9 justify-between">
-      <div className=" gap-10 text-white flex w-full">
-        <div className=" w-10/12  rounded-2xl overflow-hidden">
+    <div className=" flex items-center max-md:px-4 w-11/12 max-md:w-full py-9 justify-between">
+      <div className=" gap-10 text-white max-md:flex-col flex w-full">
+        <div className=" w-10/12 max-md:w-full rounded-2xl overflow-hidden">
           <Image
             src={
               "https://cdn.prod.website-files.com/651a6d7ba44b12668a58a7cf/651e6e4c799bcbc1409f67d0_cta-image.gif"
@@ -37,25 +37,25 @@ function StayEngaged() {
             className=" object-cover h-full w-full"
           />
         </div>
-        <div className=" flex flex-col text-6xl items-start justify-between font-extrabold w-full  gap-8">
+        <div className=" flex flex-col text-6xl items-start justify-between font-extrabold w-full max-md:text-5xl gap-8">
           <p>
             Stay engaged <br /> with us
           </p>
           <div className=" flex flex-col w-full gap-4">
             <input
               type="text"
-              className=" bg-foreground outline-none placeholder:text-base text-lg font-sofiaSans rounded-full p-3 w-full px-5"
+              className=" bg-foreground outline-none placeholder:text-base text-lg font-sofiaSans font-normal rounded-full p-3 w-full px-5"
               placeholder="Enter your email address"
             />
             <Button
               variant="cuGreen"
-              className=" w-fit p-2 px-5 text-lg text-black"
+              className=" w-fit max-md:w-full p-2 px-5 text-lg text-black"
             >
               Sign Up
             </Button>
           </div>
         </div>
-        <div className=" w-7/12 px-10 flex justify-end items-center">
+        <div className=" w-7/12 max-md:w-full max-md:justify-center px-10 flex justify-end items-center">
           <div
             onClick={scrollToTop}
             className="relative cursor-pointer flex justify-center items-center"
@@ -73,6 +73,14 @@ function StayEngaged() {
                 height={177}
                 width={177}
                 alt="rotate"
+                className=" flex max-md:hidden"
+              />
+              <Image
+                src={"/footer/rotate.svg"}
+                height={120}
+                width={120}
+                alt="rotate"
+                className=" hidden max-md:flex"
               />
             </motion.div>
             <motion.div
@@ -85,7 +93,20 @@ function StayEngaged() {
                 ease: "easeInOut",
               }}
             >
-              <Image src={"/footer/up.png"} height={55} width={55} alt="up" />
+              <Image
+                src={"/footer/up.png"}
+                className=" flex max-md:hidden"
+                height={55}
+                width={55}
+                alt="up"
+              />
+              <Image
+                src={"/footer/up.png"}
+                className=" hidden max-md:flex"
+                height={30}
+                width={30}
+                alt="up"
+              />
             </motion.div>
           </div>
         </div>

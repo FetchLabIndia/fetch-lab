@@ -32,17 +32,17 @@ const revers = [
 ].reverse();
 function ClientMarquee() {
   return (
-    <div className=" w-full  flex-col flex text-white my-20 items-center justify-center">
-      <div className="  text-4xl font-extrabold tracking-ms leading-ms text-center w-full md:w-1/4">
+    <div className=" w-full  flex-col flex text-white max-md:mb-10 my-20 items-center justify-center">
+      <div className="max-md:text-3xl max-md:px-4  text-4xl font-extrabold tracking-ms leading-ms text-center w-full md:w-1/4">
         <p>Clients we&apos;ve partnered with</p>
       </div>
-      <div className=" w-full mt-20">
+      <div className=" w-full mt-20 max-md:mt-10">
         <Marquee className="[--duration:40s]">
           {images.map((url) => (
             <Image
               key={url}
               height={500}
-              className=" mx-5 size-11 w-full"
+              className=" mx-5  object-contain size-8 w-full"
               width={500}
               alt="client-logo-image"
               src={url}
@@ -56,7 +56,7 @@ function ClientMarquee() {
             <Image
               key={url}
               height={500}
-              className=" mx-5 size-11 w-full"
+              className=" mx-5 object-contain  size-8 w-full"
               width={500}
               alt="client-logo-image"
               src={url}

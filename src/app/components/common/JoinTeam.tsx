@@ -3,7 +3,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 function JoinTeam() {
   return (
-    <div className=" w-11/12 rounded-3xl pt-10 mt-4 bg-cuGreen leading-ms tracking-ms text-center flex flex-col items-center justify-center font-extrabold relative text-7xl">
+    <div className=" w-11/12 overflow-hidden rounded-3xl pt-10 mt-4 bg-cuGreen leading-ms tracking-ms text-center flex flex-col items-center justify-center font-extrabold relative text-7xl">
       <div className=" -mt-4 absolute top-16 flex items-center justify-between w-6/12">
         <Image src={"/team/yummy.png"} height={70} width={70} alt="thinking" />
         <Image src={"/team/happy.png"} height={80} width={80} alt="thinking" />

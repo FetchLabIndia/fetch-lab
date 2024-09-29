@@ -20,7 +20,7 @@ function Footer() {
   return (
     <footer className=" flex max-md:w-full w-11/12 py-9 flex-col font-medium items-center justify-center">
       <div className=" flex max-md:flex-col max-md:gap-7 max-md:px-4 w-full mb-8 justify-between">
-        <div className=" flex items-center gap-2">
+        <div className=" flex flex-wrap items-center max-md:gap-1.5 gap-2">
           {headerButtons.map(({ title, variant, className }) => (
             <Button
               className={className + " text-base"}
@@ -32,7 +32,7 @@ function Footer() {
             </Button>
           ))}
         </div>
-        <div className=" flex max-md:flex-col max-md:items-start items-center justify-evenly flex-grow max-md:gap-2.5">
+        <div className=" flex flex-wrap max-md:flex-col max-md:items-start items-center justify-evenly flex-grow max-md:gap-2.5">
           {bottomNav.map(({ title, mail }) => (
             <div
               key={title}
@@ -58,13 +58,15 @@ function Footer() {
           </div>
         </div>
       </div>
-      <Image
-        src={"/logos/Logo(White).svg"}
-        alt="fetchLab logo"
-        height={500}
-        width={500}
-        className=" h-full w-full"
-      />
+      <div className=" w-full max-md:px-2">
+        <Image
+          src={"/logos/Logo(White).svg"}
+          alt="fetchLab logo"
+          height={500}
+          width={500}
+          className=" h-full w-full"
+        />
+      </div>
       <p className=" font-sofiaSans font-medium text-zinc-100 ">
         Copyright {new Date().getFullYear()} © fetchlab
       </p>

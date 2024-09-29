@@ -9,10 +9,9 @@ function HeroSection() {
       <div className="home-hero-component">
         <div className="container-home-hero">
           <div className="home-hero-content">
-            <h1 className="hero-header max-md:text-2xl font-extrabold text-6xl">
-              We develop innovative solutions
-              <br /> to your most difficult problems using precise <br />{" "}
-              planning and extreme imagination
+            <h1 className="hero-header w-11/12 max-md:w-full ">
+              We develop innovative solutions to your most difficult problems
+              using precise planning and extreme imagination
             </h1>
             <motion.div
               animate={{ y: [0, -7, 0] }} // Moves up by 20px and then down
@@ -22,14 +21,21 @@ function HeroSection() {
                 repeatType: "loop",
                 ease: "easeInOut",
               }}
-              className="scroll-down-button w-full flex justify-center items-center"
+              className="scroll-down-button w-full relative  flex justify-center items-center"
             >
               <Image
                 src="/home/up.png"
                 height={55}
                 width={55}
                 alt=""
-                className="hand-emoji down rotate-180"
+                className="hand-emoji transform -translate-y-1/2  down max-md:hidden rotate-180"
+              />
+              <Image
+                src="/home/up.png"
+                height={40}
+                width={40}
+                alt=""
+                className="hand-emoji transform -translate-y-1/2  max-md:flex hidden down rotate-180"
               />
             </motion.div>
           </div>
@@ -45,7 +51,7 @@ function HeroSection() {
             }}
           >
             <Button
-              className=" text-4xl  -rotate-6 leading-ms tracking-ms  hover:bg-cuRed border-none p-3 px-7"
+              className=" text-4xl max-md:text-2xl -rotate-6 leading-ms tracking-ms  hover:bg-cuRed border-none p-3 px-7"
               variant="cuRed"
             >
               GET IN TOUCH
