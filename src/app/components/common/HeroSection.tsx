@@ -9,9 +9,8 @@ function HeroSection() {
       <div className="home-hero-component">
         <div className="container-home-hero">
           <div className="home-hero-content">
-            <h1 className="hero-header max-md:text-2xl font-extrabold text-6xl">
-              We develop innovative solutions
-              <br /> to your most difficult problems using precise <br />{" "}
+            <h1 className="hero-header max-md:text-3xl font-extrabold text-6xl text-balance">
+              We develop innovative solutions to your most difficult problems using precise
               planning and extreme imagination
             </h1>
             <motion.div
@@ -29,7 +28,7 @@ function HeroSection() {
                 height={55}
                 width={55}
                 alt=""
-                className="hand-emoji down rotate-180"
+                className="hand-emoji down rotate-180 max-sm:h-[45px] max-sm:w-auto"
               />
             </motion.div>
           </div>
@@ -45,7 +44,7 @@ function HeroSection() {
             }}
           >
             <Button
-              className=" text-4xl  -rotate-6 leading-ms tracking-ms  hover:bg-cuRed border-none p-3 px-7"
+              className=" text-4xl max-sm:text-[1.5rem] max-sm:p-2 max-sm:px-10   -rotate-6 leading-ms tracking-ms  hover:bg-cuRed border-none p-3 px-7"
               variant="cuRed"
             >
               GET IN TOUCH
