@@ -27,7 +27,7 @@ function WorkCarousel() {
         ref={scrollRef}
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
-        className=" relative flex w-full cursor-none transition-all duration-200 scroll-smooth overflow-scroll snap-mandatory snap-x gap-6 p-4 px-14 mb-11"
+        className=" relative flex w-full cursor-none transition-all duration-200 scroll-smooth overflow-scroll snap-mandatory snap-x gap-6 p-4 px-14 mb-11 max-md:px-4"
       >
         <Image
           src={
@@ -35,7 +35,7 @@ function WorkCarousel() {
           }
           width={800}
           height={800}
-          className=" h-[90dvh] snap-center w-dvw object-cover object-center rounded-xl"
+          className=" h-[90dvh] snap-center w-dvw object-cover object-center rounded-xl max-md:h-[70dvh]"
           alt="image"
         />
         <Image
@@ -44,7 +44,7 @@ function WorkCarousel() {
           }
           width={800}
           height={800}
-          className="h-[90dvh] w-dvw  snap-center object-cover object-center rounded-xl"
+          className="h-[90dvh] w-dvw  snap-center object-cover object-center rounded-xl max-md:h-[70dvh]"
           alt="image"
         />
       </div>
