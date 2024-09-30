@@ -40,7 +40,7 @@ function ContactForm() {
         <div className="text-9xl max-sm:text-5xl font-extrabold text-white leading-ms tracking-ms flex flex-col max-md:flex-row max-md:items-baseline max-md:justify-center max-md:flex-wrap max-md:gap-x-4 transition-transform duration-300">
           <p>Let&apos;s</p>
           <p className="-mt-5">partner</p>
-          <div className=" flex gap-4  -mt-4 items-center">
+          <div className=" flex gap-4 -mt-4 items-center">
             <p className="">up</p>
 
             <div className=" relative h-full mb-7 max-md:hidden">
@@ -109,7 +109,7 @@ function ContactForm() {
             alt="Cursor Image"
             height={60}
             width={60}
-            className="w-full h-auto"
+            className="w-full h-auto max-sm:hidden"
           />
         </motion.div>
       </div>
