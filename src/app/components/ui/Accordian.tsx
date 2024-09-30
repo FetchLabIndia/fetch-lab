@@ -53,7 +53,7 @@ export default function Accordion({
               opacity: { duration: 0.3, ease: "easeInOut" },
             }}
           >
-            <div className="flex flex-wrap gap-2 gap-y-3 w-9/12">
+            <div className="flex flex-wrap gap-2 gap-y-3 w-9/12 max-sm:w-full">
               {Data.map(({ title, bg }) => (
                 <div
                   key={title}
@@ -61,7 +61,7 @@ export default function Accordion({
                     backgroundColor: bg,
                     color: bg === "#6B34CD" ? "white" : "black",
                   }}
-                  className=" text-[12.5px] font-[900] p-[0.30rem] px-3 leading-ms rounded-full border-transparent border-2 transition-all duration-500 text-xl text-black"
+                  className=" text-[12.5px] max-sm:text-[1.1rem] font-[900] p-[0.20rem] px-3 leading-ms rounded-full border-transparent border-2 transition-all duration-500 text-black"
                 >
                   {title}
                 </div>
