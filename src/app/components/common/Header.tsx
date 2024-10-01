@@ -3,7 +3,31 @@ import Image from "next/image";
 import Button from "@/app/components/ui/Button";
 import { headerButtons } from "@/app/utils/lib/utils";
 import { useCallback, useEffect, useState } from "react";
-import { motion } from "framer-motion";
+import { AnimatePresence, motion, useAnimate } from "framer-motion";
+import { MenuToggle } from "../ui/MenuToggle";
+
+function useMenuAnimation(isOpen: boolean) {
+  const [scope, animate] = useAnimate();
+
+  useEffect(() => {
+    animate([
+      [
+        "path.top",
+        { d: isOpen ? "M 3 16.5 L 17 2.5" : "M 2 2.5 L 20 2.5" },
+        { at: "<" },
+      ],
+      ["path.middle", { opacity: isOpen ? 0 : 1 }, { at: "<" }],
+      [
+        "path.bottom",
+        { d: isOpen ? "M 3 2.5 L 17 16.346" : "M 2 16.346 L 20 16.346" },
+        { at: "<" },
+      ],
+      // ...menuAnimations
+    ]);
+  }, [isOpen]);
+
+  return scope;
+}
 
 function Header() {
   const [isAnimating, setIsAnimating] = useState(false);
@@ -47,6 +71,10 @@ function Header() {
     };
   }, [handleScroll]);
 
+  const [isOpen, setIsOpen] = useState(false);
+
+  const scope = useMenuAnimation(isOpen);
+
   return (
     <>
       {isAnimating && (
@@ -69,13 +97,21 @@ function Header() {
       >
         <div onClick={() => handleNavigate("/")}>
           <Image
+            className="max-md:hidden"
             src={"/logos/Logo(White).svg"}
             alt="fetchLab logo"
             height={110}
             width={110}
           />
+          <Image
+            className="hidden max-md:inline-block"
+            src={"/logos/Monogram(White).svg"}
+            alt="fetchLab logo"
+            height={30}
+            width={30}
+          />
         </div>
-        <div className="flex max-sm:hidden items-center justify-center gap-6">
+        <div className="flex max-md:hidden items-center justify-center gap-6">
           {headerButtons.map(({ title, variant, className, link }) => (
             <div onClick={() => handleNavigate(link)} key={title}>
               <Button
@@ -89,7 +125,61 @@ function Header() {
             </div>
           ))}
         </div>
+        <div
+          ref={scope}
+          className="hidden max-md:flex items-center justify-center gap-6"
+        >
+          <MenuToggle toggle={() => setIsOpen(!isOpen)} />
+        </div>
       </motion.header>
+
+      <AnimatePresence>
+        {isOpen ? (
+          <motion.div
+            initial={{
+              top: "-100%",
+            }}
+            animate={{
+              top: 0,
+            }}
+            exit={{
+              top: "-100%",
+            }}
+            className="flex z-30 fixed bg-black flex-col h-screen w-screen items-center justify-center gap-y-10"
+          >
+            {headerButtons.map(({ title, variant, className, link }) => (
+              <div onClick={() => handleNavigate(link)} key={title}>
+                <Button
+                  className={"text-2xl w-[250px]"}
+                  variant={"cuGreen"}
+                >
+                  {title}
+                </Button>
+              </div>
+            ))}
+            <motion.div
+              animate={{ y: [0, -7, 0] }} // Moves up by 20px and then down
+              transition={{
+                duration: 1, // Duration for one full cycle (up and down)
+                repeat: Infinity, // Infinite loop
+                repeatType: "loop",
+                ease: "easeInOut",
+              }}
+              className="w-full flex justify-center items-center"
+            >
+              <Image
+                src="/home/up.png"
+                height={45}
+                width={45}
+                alt=""
+                className="hand-emoji down"
+              />
+            </motion.div>
+          </motion.div>
+        ) : (
+          ""
+        )}
+      </AnimatePresence>
     </>
   );
 }

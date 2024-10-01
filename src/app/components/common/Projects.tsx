@@ -36,7 +36,7 @@ export default function Project() {
             height={60}
             width={60}
             alt="thinking"
-            className=" absolute top-7 -right-[4.5rem] max-sm:top-[8rem] max-sm:-right-[4rem] max-sm:h-[50px] -rotate-12"
+            className=" absolute top-7 -right-[4.5rem] max-sm:top-[2rem] max-sm:-right-[4rem] max-sm:h-[50px] -rotate-12 z-10"
           />
         </div>
         <div className=" -mt-12 relative w-fit">

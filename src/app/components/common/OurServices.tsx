@@ -98,9 +98,9 @@ function OurServices() {
     <>
       <div className=" text-white text-center ">
         <p className=" text-4xl mb-4 font-extrabold ">our services</p>
-        <p className=" text-lg font-sofiaSans font-light leading-ms my-2 text-zinc-100">
+        <p className=" text-lg max-sm:text-md font-sofiaSans font-light leading-ms px-6 my-2 text-zinc-100">
           Our comprehensive range of services spans from strategically defining
-          your <br /> brand&apos;s future direction to empowering its growth and
+          your brand&apos;s future direction to empowering its growth and
           success in every dimension.
         </p>
       </div>

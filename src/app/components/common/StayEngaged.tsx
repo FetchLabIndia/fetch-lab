@@ -25,8 +25,8 @@ function StayEngaged() {
 
   return (
     <div className=" flex items-center w-11/12 py-9 justify-between">
-      <div className=" gap-10 text-white flex w-full max-sm:flex-col">
-        <div className=" w-10/12  rounded-2xl overflow-hidden">
+      <div className=" gap-10 text-white flex w-full max-sm:flex-col max-sm:items-center">
+        <div className=" w-10/12 max-sm:w-full rounded-2xl overflow-hidden">
           <Image
             src={
               "https://cdn.prod.website-files.com/651a6d7ba44b12668a58a7cf/651e6e4c799bcbc1409f67d0_cta-image.gif"
@@ -34,7 +34,7 @@ function StayEngaged() {
             alt="engaged"
             height={500}
             width={500}
-            className=" object-cover h-full w-auto max-sm:w-screen max-sm:h-auto"
+            className=" object-cover h-full w-auto max-sm:w-full"
           />
         </div>
         <div className=" flex flex-col text-6xl items-start justify-between font-extrabold w-full  gap-8">
@@ -49,7 +49,7 @@ function StayEngaged() {
             />
             <Button
               variant="cuGreen"
-              className=" w-fit p-2 px-5 text-lg text-black"
+              className=" w-fit max-sm:w-full p-2 px-5 text-lg text-black"
             >
               Sign Up
             </Button>
@@ -73,6 +73,7 @@ function StayEngaged() {
                 height={177}
                 width={177}
                 alt="rotate"
+                className="max-sm:h-[150px] max-sm:w-auto"
               />
             </motion.div>
             <motion.div
@@ -85,7 +86,7 @@ function StayEngaged() {
                 ease: "easeInOut",
               }}
             >
-              <Image src={"/footer/up.png"} height={55} width={55} alt="up" />
+              <Image className="max-sm:h-[45px] max-sm:w-auto" src={"/footer/up.png"} height={55} width={55} alt="up" />
             </motion.div>
           </div>
         </div>

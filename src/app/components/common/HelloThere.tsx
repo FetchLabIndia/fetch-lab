@@ -2,7 +2,7 @@ import Image from "next/image";
 
 function HelloThere() {
   return (
-    <div className=" flex p-7 pt-40 text-white w-full justify-center gap-11 max-sm:flex-col">
+    <div className=" flex p-7 pt-40 text-white w-full justify-center gap-11 max-sm:flex-col max-sm:items-center">
       <div className=" text-8xl font-bold  tracking-ms leading-ms">
         <div className="  flex w-full">
           <p>Hello </p>
