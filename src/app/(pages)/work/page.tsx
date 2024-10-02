@@ -26,7 +26,7 @@ function Page() {
             />
           </motion.div>
         </div>
-        <div className="w-11/12 mb-16 z-20 -mt-10 relative">
+        <div className="w-10/12 mb-16 z-20 -mt-10 relative">
           <WorkCard />
         </div>
       </div>
