@@ -32,7 +32,7 @@ function StayEngaged() {
             alt="engaged"
             height={500}
             width={500}
-            className=" subscribe-image"
+            className="subscribe-image"
           />
         </div>
         <div className=" flex flex-col text-6xl max-md:text-5xl items-start justify-between font-extrabold w-full  gap-8">
