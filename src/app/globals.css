@@ -207,3 +207,40 @@ body:after {
 .rotate-button {
   transform: rotate(-10deg);
 }
+
+.hand-emoji {
+  width: 3.5rem;
+  position: absolute;
+}
+.hand-emoji.down {
+  position: static;
+}
+
+.client-logo-image {
+  max-height: 3.5rem;
+}
+
+@media screen and (max-width: 767px) {
+  .client-logo-image {
+    max-height: 3rem;
+  }
+}
+.client-logo-item {
+  justify-content: center;
+  align-items: flex-start;
+  display: flex;
+}
+.subscribe-image-container {
+  border-radius: 20px;
+  overflow: hidden;
+}
+.subscribe-image {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+@media screen and (max-width: 479px) {
+  .subscribe-image {
+    aspect-ratio: 1;
+  }
+}

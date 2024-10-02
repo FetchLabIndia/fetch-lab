@@ -2,8 +2,8 @@
 import { motion, AnimatePresence } from "framer-motion";
 import React, { ComponentType, useState, useEffect } from "react";
 
-const transition = (Component: ComponentType) => {
-  const WithTransition = () => {
+const transition = <P extends object>(Component: ComponentType<P>) => {
+  const WithTransition = (props: P) => {
     const [isAnimating, setIsAnimating] = useState(true);
 
     useEffect(() => {
@@ -16,7 +16,7 @@ const transition = (Component: ComponentType) => {
 
     return (
       <>
-        <Component />
+        <Component {...props} />
         {/* AnimatePresence to control the exit animation */}
         <AnimatePresence mode="wait">
           {isAnimating && (

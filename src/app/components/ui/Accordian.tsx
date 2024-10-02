@@ -16,12 +16,12 @@ export default function Accordion({
   const [isExpanded, setIsExpanded] = useState(false);
 
   return (
-    <div className="flex flex-col w-full items-center mb-5 justify-center">
+    <div className="flex flex-col w-full items-center mb-4 justify-center">
       <div
-        className="text-5xl max-sm:text-3xl border-t-2 tracking-ms py-7 pb-3 flex w-11/12 justify-between  cursor-pointer group"
+        className="text-5xl max-sm:text-3xl border-t-2 max-md:w-full  py-7 pb-3 flex w-10/12 justify-between  cursor-pointer group"
         onClick={() => setIsExpanded(!isExpanded)}
       >
-        <p className="font-extrabold">{title}</p>
+        <p className="font-extrabold max-md:text-2xl">{title}</p>
         <div className="flex items-center gap-5">
           <motion.div
             animate={{
@@ -37,14 +37,14 @@ export default function Accordion({
               className="opacity-0 group-hover:opacity-100 max-sm:group-hover:hidden transition-opacity duration-500"
             />
           </motion.div>
-          <p className="font-sofiaSans">0{index}</p>
+          <p className="font-sofiaSans ">0{index}</p>
         </div>
       </div>
 
       <AnimatePresence>
         {isExpanded && (
           <motion.div
-            className="expand flex flex-wrap w-11/12 overflow-hidden"
+            className="expand flex flex-wrap w-10/12 max-md:w-full overflow-hidden"
             initial={{ height: 0, opacity: 1 }}
             animate={{ height: "auto", opacity: 1 }}
             exit={{ height: 0, opacity: 1 }}
@@ -53,7 +53,7 @@ export default function Accordion({
               opacity: { duration: 0.3, ease: "easeInOut" },
             }}
           >
-            <div className="flex flex-wrap gap-2 gap-y-3 w-9/12 max-sm:w-full">
+            <div className="flex flex-wrap gap-2 gap-y-3 max-md:w-full w-9/12 ">
               {Data.map(({ title, bg }) => (
                 <div
                   key={title}
@@ -61,7 +61,7 @@ export default function Accordion({
                     backgroundColor: bg,
                     color: bg === "#6B34CD" ? "white" : "black",
                   }}
-                  className=" text-[12.5px] max-sm:text-[1.1rem] font-[900] p-[0.20rem] px-3 leading-ms rounded-full border-transparent border-2 transition-all duration-500 text-black"
+                  className=" text-lg max-md:text-sm font-[900] p-[0.20rem] px-3 leading-ms rounded-full border-transparent border-2 transition-all duration-500 text-black"
                 >
                   {title}
                 </div>

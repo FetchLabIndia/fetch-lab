@@ -5,13 +5,13 @@ import Button from "../ui/Button";
 import { motion } from "framer-motion";
 function HeroSection() {
   return (
-    <div className="section-home-hero text-white w-full">
+    <div className="section-home-hero text-white">
       <div className="home-hero-component">
         <div className="container-home-hero">
           <div className="home-hero-content">
-            <h1 className="hero-header max-md:text-3xl font-extrabold text-6xl text-balance">
-              We develop innovative solutions to your most difficult problems using precise
-              planning and extreme imagination
+            <h1 className="hero-header  max-md:text-3xl font-extrabold text-6xl text-balance">
+              We develop innovative solutions to your most difficult problems
+              using precise planning and extreme imagination
             </h1>
             <motion.div
               animate={{ y: [0, -7, 0] }} // Moves up by 20px and then down
@@ -28,7 +28,7 @@ function HeroSection() {
                 height={55}
                 width={55}
                 alt=""
-                className="hand-emoji down rotate-180 max-sm:h-[45px] max-sm:w-auto"
+                className="hand-emoji down max-md:mb-20 rotate-180 max-sm:h-[50px] max-sm:w-auto"
               />
             </motion.div>
           </div>

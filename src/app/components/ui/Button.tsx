@@ -7,7 +7,12 @@ type ButtonProps = {
   className?: string; // Optional custom className prop
 };
 
-function Button({ children, variant = "cuYellow", className }: ButtonProps) {
+function Button({
+  children,
+  variant = "cuYellow",
+  className,
+  ...props
+}: ButtonProps) {
   const variantClasses = {
     cuYellow: "bg-cuYellow hover:border-cuYellow",
     cuRed: "bg-cuRed hover:border-cuRed",
@@ -17,6 +22,7 @@ function Button({ children, variant = "cuYellow", className }: ButtonProps) {
 
   return (
     <button
+      {...props}
       className={cn(
         "  text-sm font-[900] p-[0.27rem] px-3  rounded-full border-transparent border-2 transition-all duration-500",
         "hover:bg-transparent hover:text-white",

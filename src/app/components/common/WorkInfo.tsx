@@ -3,7 +3,17 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 import { CiCirclePlus } from "react-icons/ci";
 
-function WorkInfo() {
+function WorkInfo({
+  heading,
+  tags,
+  title,
+  desc,
+}: {
+  heading: string;
+  tags: string[];
+  title: string;
+  desc: string;
+}) {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleAccordion = () => {
@@ -11,23 +21,25 @@ function WorkInfo() {
   };
 
   return (
-    <div className=" flex max-md:flex-col max-md:gap-y-4 items-start w-11/12 justify-between">
+    <div className=" flex max-md:flex-col max-md:gap-y-4 items-start w-10/12 justify-between">
       <div className=" font-extrabold gap-4 flex flex-col text-5xl text-white ">
-        <p>MoodRobe</p>
-        <div className=" flex font-sofiaSans items-center gap-2">
-          <p className=" border w-fit font-extrabold tracking-ms leading-ms border-white rounded-full px-3 py-1 text-sm">
-            Branding & Design
-          </p>
-          <p className=" border w-fit font-extrabold tracking-ms leading-ms border-white rounded-full px-3 py-1 text-sm">
-            merchandise
-          </p>
+        <p>{heading}</p>
+        <div className=" flex flex-wrap font-sofiaSans items-center gap-4">
+          {tags.map((tag) => (
+            <p
+              key={tag}
+              className=" border w-fit font-extrabold border-white rounded-full px-3 py-1 text-sm"
+            >
+              {tag}
+            </p>
+          ))}
         </div>
       </div>
       <div className="text-white flex flex-col gap-7 text-2xl leading-ms">
-        <div className="flex font-sofiaSans font-semibold items-center gap-4">
-          <p>Moodrobe: A Blank Canvas for Minimalist Fashion</p>
+        <div className="flex justify-between font-sofiaSans font-semibold items-center gap-4">
+          <p>{title}</p>
           <CiCirclePlus
-            className="size-8 cursor-pointer"
+            className="size-8 max-md:size-11 max-md:mb-2.5 cursor-pointer"
             onClick={toggleAccordion}
           />
         </div>
@@ -42,15 +54,10 @@ function WorkInfo() {
           }}
           className="overflow-hidden"
         >
-          <p className="max-w-lg max-md:max-w-screen-md font-sofiaSans text-justify text-lg font-light">
-            Minimalism in fashion isn’t just a trend—it’s a lifestyle. That’s
-            the foundation Moodrobe was built on, offering blank, stylish
-            T-shirts that let individuality shine through simplicity. When
-            Moodrobe approached us to create their complete branding and
-            guidelines, the challenge was to design an identity that felt as
-            versatile as the product itself, yet bold enough to stand out in the
-            world of minimalist fashion.
-          </p>
+          <p
+            dangerouslySetInnerHTML={{ __html: desc }}
+            className="max-w-lg max-md:max-w-screen-md font-sofiaSans text-pretty text-lg font-light"
+          ></p>
         </motion.div>
       </div>
     </div>

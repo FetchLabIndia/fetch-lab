@@ -15,13 +15,13 @@ function Page() {
   return (
     <>
       <div className="relative w-full flex flex-col justify-center items-center mx-auto">
-        <div className="sticky w-11/12 top-0 py-20 pt-36 pb-24 max-sm:w-full flex max-sm:items-center max-sm:justify-center">
+        <div className="sticky w-10/12 top-0 py-20 max-md:pt-28 pt-36 pb-24  flex items-center justify-center">
           <motion.div style={{ opacity }}>
             <Image
               src={"/work/work.svg"}
               height={500}
               width={500}
-              className="w-full max-sm:w-[400px] max-sm:px-4"
+              className="w-dvw h-full max-md:w-[400px] max-md:px-0"
               alt="work"
             />
           </motion.div>
@@ -34,6 +34,7 @@ function Page() {
       <Project />
       <StayEngaged />
 
+      <hr className="w-full border-t border-zinc-800" />
       <hr className="w-full border-t border-zinc-800" />
       <Footer />
     </>

@@ -17,8 +17,9 @@ function page() {
       <OurServices />
       <div className=" h-2"></div>
       <JoinTeam />
-      <div className=" h-20"></div>
+      <div className=" h-20 max-md:h-7"></div>
       <StayEngaged />
+      <hr className="w-full border-t border-zinc-800" />
       <hr className="w-full border-t border-zinc-800" />
       <Footer />
     </>

@@ -96,15 +96,17 @@ const contentProduction = [
 function OurServices() {
   return (
     <>
-      <div className=" text-white text-center ">
-        <p className=" text-4xl mb-4 font-extrabold ">our services</p>
-        <p className=" text-lg max-sm:text-md font-sofiaSans font-light leading-ms px-6 my-2 text-zinc-100">
+      <div className=" text-white text-center md:flex justify-center items-center md:flex-col ">
+        <p className=" text-4xl mb-4 font-extrabold max-md:text-3xl">
+          our services
+        </p>
+        <p className=" text-xl w-1/2 max-md:w-full max-md:text-base max-md:px-7 font-sofiaSans font-light leading-ms px-6 my-2 text-zinc-100">
           Our comprehensive range of services spans from strategically defining
           your brand&apos;s future direction to empowering its growth and
           success in every dimension.
         </p>
       </div>
-      <div className=" mt-12 flex flex-col items-center text-white w-full">
+      <div className=" mt-12 max-md:px-4 flex flex-col items-center text-white w-full">
         <div className=" flex flex-col w-full items-center justify-start">
           <Accordion
             title="Branding and Design"
@@ -117,7 +119,7 @@ function OurServices() {
             Data={socialMediaManagement}
           />
           <Accordion
-            title="Content Production"
+            title="Website design and Development"
             index={3}
             Data={contentProduction}
           />

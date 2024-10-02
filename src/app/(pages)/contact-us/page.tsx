@@ -7,6 +7,7 @@ function page() {
   return (
     <>
       <ContactForm />
+      <hr className="w-full border-t border-zinc-800" />
       <Footer />
     </>
   );

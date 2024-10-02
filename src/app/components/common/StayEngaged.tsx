@@ -24,23 +24,19 @@ function StayEngaged() {
   }
 
   return (
-    <div className=" flex items-center w-11/12 py-9 justify-between">
+    <div className=" flex items-center w-10/12 py-9 justify-between">
       <div className=" gap-10 text-white flex w-full max-sm:flex-col max-sm:items-center">
-        <div className=" w-10/12 max-sm:w-full rounded-2xl overflow-hidden">
+        <div className=" w-10/12  max-sm:w-full rounded-2xl overflow-hidden">
           <Image
-            src={
-              "https://cdn.prod.website-files.com/651a6d7ba44b12668a58a7cf/651e6e4c799bcbc1409f67d0_cta-image.gif"
-            }
+            src={"/StayEngaged/StayEngaged.png"}
             alt="engaged"
             height={500}
             width={500}
-            className=" object-cover h-full w-auto max-sm:w-full"
+            className=" subscribe-image"
           />
         </div>
-        <div className=" flex flex-col text-6xl items-start justify-between font-extrabold w-full  gap-8">
-          <p>
-            Stay engaged <br /> with us
-          </p>
+        <div className=" flex flex-col text-6xl max-md:text-5xl items-start justify-between font-extrabold w-full  gap-8">
+          <p>Stay engaged with us</p>
           <div className=" flex flex-col w-full gap-4">
             <input
               type="text"
@@ -86,7 +82,13 @@ function StayEngaged() {
                 ease: "easeInOut",
               }}
             >
-              <Image className="max-sm:h-[45px] max-sm:w-auto" src={"/footer/up.png"} height={55} width={55} alt="up" />
+              <Image
+                className="max-sm:h-[45px] max-sm:w-auto"
+                src={"/footer/up.png"}
+                height={55}
+                width={55}
+                alt="up"
+              />
             </motion.div>
           </div>
         </div>

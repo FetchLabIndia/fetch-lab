@@ -2,9 +2,11 @@
 import Image from "next/image";
 import Button from "@/app/components/ui/Button";
 import { headerButtons } from "@/app/utils/lib/utils";
-import { useCallback, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { AnimatePresence, motion, useAnimate } from "framer-motion";
 import { MenuToggle } from "../ui/MenuToggle";
+import useHideHeaderOnScroll from "@/app/hooks/useShowHeader";
+import useNavigation from "@/app/hooks/useNavigation";
 
 function useMenuAnimation(isOpen: boolean) {
   const [scope, animate] = useAnimate();
@@ -24,55 +26,17 @@ function useMenuAnimation(isOpen: boolean) {
       ],
       // ...menuAnimations
     ]);
-  }, [isOpen]);
+  }, [isOpen, animate]);
 
   return scope;
 }
 
 function Header() {
-  const [isAnimating, setIsAnimating] = useState(false);
-  const [nextLink, setNextLink] = useState<string | null>(null);
-  const [showHeader, setShowHeader] = useState(true);
-  const [lastScrollY, setLastScrollY] = useState(0);
-
-  const handleNavigate = useCallback((link: string) => {
-    setNextLink(link); // Store the link to navigate
-    setIsAnimating(true); // Start the animation
-  }, []);
-
-  // Handle the animation end and navigate
-  const handleAnimationComplete = () => {
-    if (nextLink) {
-      window.location.href = nextLink;
-      setNextLink(null); // Reset the link after navigation
-    }
-  };
-
-  // Track scroll direction
-  const handleScroll = useCallback(() => {
-    const currentScrollY = window.scrollY;
-
-    if (currentScrollY > lastScrollY) {
-      // Scrolling down
-      setShowHeader(false);
-    } else {
-      // Scrolling up
-      setShowHeader(true);
-    }
-
-    setLastScrollY(currentScrollY);
-  }, [lastScrollY]);
-
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, [handleScroll]);
+  const { showHeader } = useHideHeaderOnScroll();
 
   const [isOpen, setIsOpen] = useState(false);
-
+  const { isAnimating, handleAnimationComplete, handleNavigate } =
+    useNavigation();
   const scope = useMenuAnimation(isOpen);
 
   return (
@@ -89,7 +53,7 @@ function Header() {
       )}
 
       <motion.header
-        className={`flex z-40 fixed max-md:px-4 max-md:left-0 top-0 max-md:w-full w-11/12 py-9 items-center justify-between transition-transform duration-300 ${
+        className={`flex z-40 fixed max-md:px-4 max-md:left-0 top-0 max-md:w-full w-10/12 py-9 items-center justify-between transition-transform duration-300 ${
           showHeader ? "translate-y-0" : "-translate-y-full"
         }`}
         initial={{ y: 0 }}
@@ -147,12 +111,9 @@ function Header() {
             }}
             className="flex z-30 fixed bg-black flex-col h-screen w-screen items-center justify-center gap-y-10"
           >
-            {headerButtons.map(({ title, variant, className, link }) => (
+            {headerButtons.map(({ title, link }) => (
               <div onClick={() => handleNavigate(link)} key={title}>
-                <Button
-                  className={"text-2xl w-[250px]"}
-                  variant={"cuGreen"}
-                >
+                <Button className={"text-2xl w-[250px]"} variant={"cuGreen"}>
                   {title}
                 </Button>
               </div>
@@ -172,7 +133,7 @@ function Header() {
                 height={45}
                 width={45}
                 alt=""
-                className="hand-emoji down"
+                className=""
               />
             </motion.div>
           </motion.div>

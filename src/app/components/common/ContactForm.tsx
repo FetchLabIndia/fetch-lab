@@ -36,24 +36,27 @@ function ContactForm() {
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      <div className="w-11/12 flex max-md:flex-col max-md:gap-y-6 items-start justify-between relative group">
-        <div className="text-9xl max-sm:text-5xl font-extrabold text-white leading-ms tracking-ms flex flex-col max-md:flex-row max-md:items-baseline max-md:justify-center max-md:flex-wrap max-md:gap-x-4 transition-transform duration-300">
-          <p>Let&apos;s</p>
-          <p className="-mt-5">partner</p>
-          <div className=" flex gap-4 -mt-4 items-center">
-            <p className="">up</p>
+      <div className="w-10/12 flex flex-wrap items-start justify-between relative group">
+        <div className="text-9xl max-md:items-center max-md:-mt-7 max-md:justify-center max-md:w-full max-md:text-xl font-extrabold text-white leading-ms tracking-ms flex flex-col  transition-transform duration-300">
+          <p className=" max-md:hidden">Let&apos;s</p>
+          <p className="-mt-5 max-md:hidden">partner</p>
+          <p className=" max-md:text-4xl hidden max-md:flex max-md:items-center max-md:justify-center text-center w-full pb-4">
+            Let&apos;s partner up
+          </p>
+          <div className=" flex gap-4 max-md:mb-7 max-md:mt-0.5 -mt-4 items-center">
+            <p className="max-md:hidden">up</p>
 
-            <div className=" relative h-full mb-7 max-md:hidden">
+            <div className=" relative h-full mb-7">
               <Image
                 src="/contact/eye-cover.png"
                 alt="eye cover"
                 height={120}
                 width={120}
-                className=" h-full "
+                className=" h-full max-md:hidden"
               />
               <Image
                 src="/contact/eye.png"
-                className=" absolute inset-0 m-auto"
+                className=" absolute max-md:hidden inset-0 m-auto "
                 alt="eye"
                 height={100}
                 style={{
@@ -61,10 +64,28 @@ function ContactForm() {
                 }}
                 width={100}
               />
+              <Image
+                src="/contact/eye-cover.png"
+                alt="eye cover"
+                height={90}
+                width={90}
+                className=" h-full max-md:flex hidden"
+              />
+              <Image
+                src="/contact/eye.png"
+                className=" absolute max-md:flex hidden inset-0 m-auto "
+                alt="eye"
+                height={70}
+                style={{
+                  transform: `translate(${eyePosition.x}px, ${eyePosition.y}px)`,
+                }}
+                width={70}
+              />
             </div>
           </div>
         </div>
-        <div className="flex flex-col max-md:w-full w-1/2 gap-4">
+
+        <div className="flex max-md:w-full flex-col w-1/2 gap-4">
           <input
             type="text"
             className="bg-foreground  font-sofiaSans outline-none placeholder:text-base text-base font-normal text-white rounded-full p-3 w-full px-5"
@@ -77,6 +98,8 @@ function ContactForm() {
           />
           <div className="relative w-full font-sofiaSans">
             <select className="bg-foreground outline-none placeholder:text-base text-base font-normal text-white relative appearance-none rounded-full p-3 w-full px-5 pr-10">
+              <option value="">How can we help you?</option>
+              <option value="">How can we help you?</option>
               <option value="">How can we help you?</option>
             </select>
             <FaChevronDown className="absolute right-4 top-1/2 transform -translate-y-1/2 text-white pointer-events-none" />
@@ -94,7 +117,7 @@ function ContactForm() {
             isHovered ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0 }
           }
           transition={{ duration: 0.3 }}
-          className="absolute"
+          className="absolute max-md:hidden"
           style={{
             left: `${cursorPos.x - 80}px`,
             top: `${cursorPos.y - 170}px`,
@@ -105,11 +128,11 @@ function ContactForm() {
           }}
         >
           <Image
-            src="/cursor/pen.png" // Replace with your image path
+            src="/cursor/pen.png"
             alt="Cursor Image"
             height={60}
             width={60}
-            className="w-full h-auto max-sm:hidden"
+            className="w-full h-auto"
           />
         </motion.div>
       </div>
