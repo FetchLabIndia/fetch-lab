@@ -31,7 +31,7 @@ function Page() {
         <div className="sticky w-10/12 top-0 py-14 max-md:pt-28 pt-36">
           <motion.div style={{ opacity }}>
             <Image
-              src={"/blogs/blogs.svg"}
+              src={"/blogs/Blogs.svg"}
               height={500}
               width={500}
               className="w-full"
