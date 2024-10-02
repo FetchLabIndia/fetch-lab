@@ -53,7 +53,7 @@ export const blogs = [
 export const works = [
   {
     slug: "brew_mingle",
-    image: "/Brewmingle/Brew mingle-01.jpg",
+    image: "/Brewmingle/Brewmingle-01.jpg",
     tags: ["Branding & Design"],
   },
   {
@@ -120,12 +120,12 @@ What made this project truly satisfying was knowing that we weren’t just creat
     tags: ["Branding & Design"],
     title: "Brewing Conversations in Houston",
     images: [
-      "/Brewmingle/Brew mingle-01.jpg",
-      "/Brewmingle/Brew mingle-02.jpg",
-      "/Brewmingle/Brew mingle-03.jpg",
-      "/Brewmingle/Brew mingle-04.jpg",
-      "/Brewmingle/Brew mingle-05.jpg",
-      "/Brewmingle/Brew mingle-06.jpg",
+      "/Brewmingle/Brewmingle-01.jpg",
+      "/Brewmingle/Brewmingle-02.jpg",
+      "/Brewmingle/Brewmingle-03.jpg",
+      "/Brewmingle/Brewmingle-04.jpg",
+      "/Brewmingle/Brewmingle-05.jpg",
+      "/Brewmingle/Brewmingle-06.jpg",
     ],
     desc: `Coffee has always been more than just a drink; it’s about the moments that happen around it. That’s where Brew Mingle steps in, a brand on a mission to not only serve exceptional coffee but to create a community-driven culture in Houston. As specialty coffee gains momentum across the city, Brew Mingle is carving out its own space with a distinct focus on artisanal quality and social connection.
 <br/>
