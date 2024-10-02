@@ -11,19 +11,19 @@ function SingleBlog() {
     <>
       <div className=" text-white  w-10/12 py-20 pt-32">
         <div className=" flex justify-between">
-          <p className=" text-4xl font-extrabold w-10/12">
+          <p className=" text-4xl max-md:text-xl font-extrabold w-10/12">
             How Branding Shapes the Identity of Fashion Brands: A Fun Dive into
             Zudio’s Strategy
           </p>
 
-          <div className=" flex items-center gap-2 self-start text-2xl">
+          <div className=" flex items-center gap-2  max-md:text-lg self-start text-2xl">
             <FaLinkedin />
             <FaXTwitter className=" ml-1.5" />
             <ImFacebook />
           </div>
         </div>
 
-        <p className=" font-sofiaSans my-4 text-lg">
+        <p className=" font-sofiaSans my-4  max-md:text-base text-lg">
           October 01, 2024 • 5 minutes
         </p>
         <div className=" w-full h-full">
@@ -36,7 +36,9 @@ function SingleBlog() {
           />
         </div>
         <div className=" my-10 font-sofiaSans">
-          <h1 className=" text-3xl font-extrabold">Introduction</h1>
+          <h1 className=" text-3xl  max-md:text-2xl font-extrabold">
+            Introduction
+          </h1>
           <p>
             Branding is like the secret sauce of any fashion brand--it’s what
             makes you crave more! Think of it as the outfit that brands wear to
@@ -50,7 +52,7 @@ function SingleBlog() {
             for style without breaking the bank.
           </p>
 
-          <h2 className=" mt-7 text-3xl font-extrabold">
+          <h2 className=" mt-7 text-3xl  max-md:text-2xl font-extrabold">
             1. The Fashion Branding Playground:
           </h2>
           <p className=" mt-8">
@@ -64,7 +66,7 @@ function SingleBlog() {
             great deal.
           </p>
 
-          <h2 className=" mt-7 text-3xl font-extrabold">
+          <h2 className=" mt-7 text-3xl  max-md:text-2xl font-extrabold">
             2. Zudio’s Branding Journey: From Zero to Hero:
           </h2>
           <p className=" mt-8">
@@ -77,7 +79,7 @@ function SingleBlog() {
             you drop (without the guilt trip).
           </p>
 
-          <h2 className=" mt-7 text-3xl font-extrabold">
+          <h2 className=" mt-7 text-3xl  max-md:text-2xl font-extrabold">
             3. The Magic Ingredients in Zudio’s Branding Recipe:
           </h2>
           <p className=" mt-8">
@@ -97,7 +99,7 @@ function SingleBlog() {
             creating an experience that’s as fun as it is hassle-free.
           </p>
 
-          <h2 className=" mt-7 text-3xl font-extrabold">
+          <h2 className=" mt-7 text-3xl  max-md:text-2xl font-extrabold">
             4. Consistency is the Name of the Game:
           </h2>
           <p className=" mt-8">
@@ -110,7 +112,7 @@ function SingleBlog() {
             keep it real?
           </p>
 
-          <h2 className=" mt-7 text-3xl font-extrabold">
+          <h2 className=" mt-7 text-3xl  max-md:text-2xl font-extrabold">
             5. What Other Fashion Brands Can Learn from Zudio
           </h2>
           <p className=" mt-8">
@@ -140,7 +142,9 @@ function SingleBlog() {
             feedback, and be open to evolving based on what your followers want.
           </p>
 
-          <h2 className=" mt-7 text-3xl font-extrabold">6. Conclusion:</h2>
+          <h2 className=" mt-7 text-3xl  max-md:text-2xl font-extrabold">
+            6. Conclusion:
+          </h2>
           <p className=" mt-8">
             Zudio’s branding game is a masterclass in how to blend style
             with substance. They’ve managed to create a brand that’s not just
