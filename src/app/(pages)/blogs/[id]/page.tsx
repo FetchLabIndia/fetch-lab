@@ -10,3 +10,4 @@ function page({ params }: { params: { id: string } }) {
 }
 
 export default page;
+export const runtime = "edge";
