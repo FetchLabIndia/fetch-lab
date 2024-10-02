@@ -24,9 +24,9 @@ function StayEngaged() {
   }
 
   return (
-    <div className=" flex items-center w-10/12 py-9 justify-between">
-      <div className=" gap-10 text-white flex w-full max-sm:flex-col max-sm:items-center">
-        <div className=" w-10/12  max-sm:w-full rounded-2xl overflow-hidden">
+    <div className=" flex items-center w-10/12 max-md:w-full max-md:px-4 py-9 justify-between">
+      <div className=" gap-10 text-white flex w-full max-md:flex-col max-md:items-center">
+        <div className=" w-10/12  max-md:w-full rounded-2xl overflow-hidden">
           <Image
             src={"/engaged/engaged.png"}
             alt="engaged"
@@ -45,13 +45,13 @@ function StayEngaged() {
             />
             <Button
               variant="cuGreen"
-              className=" w-fit max-sm:w-full p-2 px-5 text-lg text-black"
+              className=" w-fit max-md:w-full p-2 px-5 text-lg text-black"
             >
               Sign Up
             </Button>
           </div>
         </div>
-        <div className=" w-7/12 px-10 flex justify-end items-center">
+        <div className=" w-7/12 max-md:w-full max-md:justify-center px-10 flex justify-end items-center">
           <div
             onClick={scrollToTop}
             className="relative cursor-pointer flex justify-center items-center"
@@ -69,7 +69,7 @@ function StayEngaged() {
                 height={177}
                 width={177}
                 alt="rotate"
-                className="max-sm:h-[150px] max-sm:w-auto"
+                className="max-md:h-[120px] max-md:w-auto"
               />
             </motion.div>
             <motion.div
@@ -83,7 +83,7 @@ function StayEngaged() {
               }}
             >
               <Image
-                className="max-sm:h-[45px] max-sm:w-auto"
+                className="max-md:h-[45px] max-md:w-auto"
                 src={"/footer/up.png"}
                 height={55}
                 width={55}

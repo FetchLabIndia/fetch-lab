@@ -36,7 +36,7 @@ function ContactForm() {
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      <div className="w-10/12 flex flex-wrap items-start justify-between relative group">
+      <div className="w-10/12 max-md:w-full max-md:px-4 flex flex-wrap items-start justify-between relative group">
         <div className="text-9xl max-md:items-center max-md:-mt-7 max-md:justify-center max-md:w-full max-md:text-xl font-extrabold text-white leading-ms tracking-ms flex flex-col  transition-transform duration-300">
           <p className=" max-md:hidden">Let&apos;s</p>
           <p className="-mt-5 max-md:hidden">partner</p>

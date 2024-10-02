@@ -15,7 +15,7 @@ function Page() {
   return (
     <>
       <div className="relative w-full flex flex-col justify-center items-center mx-auto">
-        <div className="sticky w-10/12 top-0 py-20 max-md:pt-28 pt-36 pb-24  flex items-center justify-center">
+        <div className="sticky w-10/12 max-md:w-full max-md:px-4 top-0 py-20 max-md:pt-28 pt-36 pb-24  flex items-center justify-center">
           <motion.div style={{ opacity }}>
             <Image
               src={"/work/work.svg"}
@@ -26,7 +26,7 @@ function Page() {
             />
           </motion.div>
         </div>
-        <div className="w-10/12 mb-16 z-20 -mt-10 relative">
+        <div className="w-10/12 max-md:w-full max-md:px-4 mb-16 z-20 -mt-10 relative">
           <WorkCard />
         </div>
       </div>
