@@ -28,7 +28,7 @@ function StayEngaged() {
       <div className=" gap-10 text-white flex w-full max-sm:flex-col max-sm:items-center">
         <div className=" w-10/12  max-sm:w-full rounded-2xl overflow-hidden">
           <Image
-            src={"/StayEngaged/StayEngaged.png"}
+            src={"/engaged/engaged.png"}
             alt="engaged"
             height={500}
             width={500}
