@@ -102,7 +102,7 @@ function WorkCarousel() {
           }}
         >
           <Image
-            src="/button.svg"
+            src="/Button.svg"
             alt="Cursor Image"
             height={800}
             width={800}
