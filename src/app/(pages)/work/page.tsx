@@ -18,7 +18,7 @@ function Page() {
         <div className="sticky w-10/12 max-md:w-full max-md:px-4 top-0 py-20 max-md:pt-28 pt-36 pb-24  flex items-center justify-center">
           <motion.div style={{ opacity }}>
             <Image
-              src={"/work/work.svg"}
+              src={"/work/Work.svg"}
               height={500}
               width={500}
               className="w-dvw h-full max-md:w-[400px] max-md:px-0"
