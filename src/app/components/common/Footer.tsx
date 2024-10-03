@@ -1,12 +1,13 @@
 "use client";
 import { FiInstagram } from "react-icons/fi";
-import { FaLinkedin } from "react-icons/fa";
+import { FaLinkedin, FaMedium } from "react-icons/fa";
 import Image from "next/image";
 import Button from "@/app/components/ui/Button";
 import Link from "next/link";
 import { headerButtons } from "@/app/utils/lib/utils";
 import useNavigation from "@/app/hooks/useNavigation";
 import { motion } from "framer-motion";
+import { RiTwitterXFill } from "react-icons/ri";
 const bottomNav = [
   {
     title: "Work with us",
@@ -21,7 +22,7 @@ function Footer() {
   const { handleNavigate, handleAnimationComplete, isAnimating } =
     useNavigation();
   return (
-    <footer className=" flex max-md:w-full w-10/12 py-9 flex-col font-medium items-center justify-center">
+    <footer className=" flex max-md:w-full w-9/12 py-9 flex-col font-medium items-center justify-center">
       {isAnimating && (
         <motion.div
           className="fixed top-0  left-0 z-50 w-screen h-screen bg-green-500"
@@ -55,7 +56,7 @@ function Footer() {
             >
               <p className="  font-extrabold text-lg ">{title}</p>
               <Link
-                className=" font-sofiaSans text-lg text-zinc-200"
+                className=" font-light font-sofiaSans text-lg text-zinc-200"
                 href={`mailto:${mail}`}
               >
                 {mail}
@@ -71,14 +72,14 @@ function Footer() {
               >
                 <FiInstagram />
               </Link>
-              {/* <RiTwitterXFill /> */}
+              <RiTwitterXFill />
               <Link
                 href={"https://www.linkedin.com/company/fetchlab/"}
                 target="_blank"
               >
                 <FaLinkedin />
               </Link>
-              {/* <FaMedium /> */}
+              <FaMedium />
             </div>
           </div>
         </div>
@@ -88,9 +89,9 @@ function Footer() {
         alt="fetchLab logo"
         height={500}
         width={500}
-        className=" h-full w-full max-sm:h-auto max-md:px-3"
+        className=" h-full w-full md:-ml-4 max-sm:h-auto max-md:px-3"
       />
-      <p className=" font-sofiaSans font-medium text-zinc-100 ">
+      <p className=" font-sofiaSans font-normal text-zinc-100 ">
         Copyright {new Date().getFullYear()} © fetchlab
       </p>
     </footer>

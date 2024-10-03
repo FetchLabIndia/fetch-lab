@@ -24,8 +24,8 @@ function StayEngaged() {
   }
 
   return (
-    <div className=" flex items-center w-10/12 max-md:w-full max-md:px-4 py-9 justify-between">
-      <div className=" gap-10 text-white flex w-full max-md:flex-col max-md:items-center">
+    <div className=" flex items-center w-9/12 max-md:w-full max-md:px-4 py-9 justify-between">
+      <div className=" gap-5 text-white flex w-full max-md:flex-col max-md:items-center">
         <div className=" w-10/12  max-md:w-full rounded-2xl overflow-hidden">
           <Image
             src={"/engaged/engaged.png"}
@@ -35,12 +35,14 @@ function StayEngaged() {
             className="subscribe-image"
           />
         </div>
-        <div className=" flex flex-col text-6xl max-md:text-5xl items-start justify-between font-extrabold w-full  gap-8">
-          <p>Stay engaged with us</p>
+        <div className=" flex flex-col text-6xl max-md:text-5xl items-start justify-between font-extrabold w-full gap-8">
+          <p>
+            Stay engaged <br /> with us
+          </p>
           <div className=" flex flex-col w-full gap-4">
             <input
               type="text"
-              className=" bg-foreground outline-none placeholder:text-base text-lg font-sofiaSans rounded-full p-3 w-full px-5"
+              className=" bg-foreground font-normal outline-none placeholder:text-base text-lg font-sofiaSans rounded-full p-3 w-full px-5"
               placeholder="Enter your email address"
             />
             <Button

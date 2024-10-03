@@ -28,7 +28,7 @@ function Page() {
         />
       )}
       <div className="relative w-full flex flex-col justify-center items-center mx-auto">
-        <div className="sticky w-10/12 top-0 py-14 max-md:pt-28 pt-36">
+        <div className="sticky w-9/12 top-0 py-14 max-md:pt-28 pt-36">
           <motion.div style={{ opacity }}>
             <Image
               src={"/blogs/Blogs.svg"}
@@ -40,7 +40,7 @@ function Page() {
           </motion.div>
         </div>
 
-        <div className=" w-10/12 max-md:w-full z-10 ">
+        <div className=" w-9/12 max-md:w-full z-10 ">
           <div className="grid grid-cols-2 gap-10 max-md:gap-5 max-md:grid-cols-1">
             {blogs.map((data, i) => (
               <BlogCard

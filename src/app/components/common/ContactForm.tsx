@@ -36,7 +36,7 @@ function ContactForm() {
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      <div className="w-10/12 max-md:w-full max-md:px-4 flex flex-wrap items-start justify-between relative group">
+      <div className="w-9/12 max-md:w-full max-md:px-4 flex flex-wrap items-start justify-between relative group">
         <div className="text-9xl max-md:items-center max-md:-mt-7 max-md:justify-center max-md:w-full max-md:text-xl font-extrabold text-white leading-ms tracking-ms flex flex-col  transition-transform duration-300">
           <p className=" max-md:hidden">Let&apos;s</p>
           <p className="-mt-5 max-md:hidden">partner</p>
@@ -85,7 +85,7 @@ function ContactForm() {
           </div>
         </div>
 
-        <div className="flex max-md:w-full flex-col w-1/2 gap-4">
+        <div className="flex font-normal max-md:w-full flex-col w-1/2 gap-4">
           <input
             type="text"
             className="bg-foreground  font-sofiaSans outline-none placeholder:text-base text-base font-normal text-white rounded-full p-3 w-full px-5"
@@ -104,7 +104,10 @@ function ContactForm() {
             </select>
             <FaChevronDown className="absolute right-4 top-1/2 transform -translate-y-1/2 text-white pointer-events-none" />
           </div>
-          <textarea className="bg-foreground font-sofiaSans text-white outline-none placeholder:text-base text-base font-normal min-h-52 rounded-2xl p-3 w-full px-5"></textarea>
+          <textarea
+            placeholder="Your message"
+            className="bg-foreground font-sofiaSans text-white outline-none placeholder:text-base text-base font-normal min-h-52 rounded-2xl p-3 w-full px-5"
+          ></textarea>
           <Button variant="cuGreen" className="text-xl py-1.5">
             Get in touch
           </Button>

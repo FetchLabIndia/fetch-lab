@@ -3,7 +3,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 function JoinTeam() {
   return (
-    <div className=" w-10/12 max-md:w-11/12 uppercase rounded-3xl pt-24 mt-4 bg-cuGreen leading-ms tracking-ms text-center flex flex-col items-center justify-center font-extrabold relative text-7xl">
+    <div className=" w-9/12 max-md:w-11/12 uppercase rounded-3xl pt-24 mt-4 bg-cuGreen leading-ms tracking-ms text-center flex flex-col items-center justify-center font-extrabold relative text-7xl">
       <div className=" -mt-4 absolute top-16 max-sm:-top-[1rem] flex items-center justify-between w-6/12">
         <Image src={"/team/yummy.png"} height={70} width={70} alt="thinking" />
         <Image src={"/team/happy.png"} height={80} width={80} alt="thinking" />
@@ -38,7 +38,7 @@ function JoinTeam() {
             variant="cuRed"
             className=" bg-cuRed hover:bg-cuRed hover:text-black border-none rotate-12 text-4xl p-3 px-6"
           >
-            REACH OUT
+            Reach out
           </Button>
         </motion.div>
         <motion.div
@@ -49,7 +49,7 @@ function JoinTeam() {
           }}
         >
           <Button className=" -rotate-12 hover:text-black hover:bg-cuYellow border-none text-4xl p-3 px-6">
-            SEE OPENINGS
+            See the openings
           </Button>
         </motion.div>
       </div>

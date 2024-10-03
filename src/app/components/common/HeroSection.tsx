@@ -8,8 +8,8 @@ function HeroSection() {
     <div className="section-home-hero text-white">
       <div className="home-hero-component">
         <div className="container-home-hero">
-          <div className="home-hero-content">
-            <h1 className="hero-header  max-md:text-3xl font-extrabold text-6xl text-balance">
+          <div className="home-hero-content flex justify-center ">
+            <h1 className="hero-header w-11/12  max-md:text-3xl font-extrabold text-6xl text-balance">
               We develop innovative solutions to your most difficult problems
               using precise planning and extreme imagination
             </h1>

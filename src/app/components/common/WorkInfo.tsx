@@ -21,7 +21,7 @@ function WorkInfo({
   };
 
   return (
-    <div className=" flex max-md:flex-col max-md:gap-y-4 items-start w-10/12 justify-between">
+    <div className=" flex max-md:flex-col max-md:gap-y-4 items-start w-9/12 justify-between">
       <div className=" font-extrabold gap-4 flex flex-col text-5xl text-white ">
         <p>{heading}</p>
         <div className=" flex flex-wrap font-sofiaSans items-center gap-4">

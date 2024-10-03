@@ -13,7 +13,9 @@ function Home() {
   return (
     <>
       <HeroSection />
+
       <WorkCarousel />
+
       <ClientMarquee />
       <OurServices />
       <div className=" md:h-20 h-5"></div>

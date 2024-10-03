@@ -8,7 +8,7 @@ function Team() {
       </p>
       <div className=" flex items-center gap-6  text-base justify-center max-sm:flex-wrap max-sm:px-2">
         <div>
-          <div className=" w-[200px] h-[203px] max-sm:w-[140px] max-sm:h-[143px]  rounded-2xl">
+          <div className="  max-sm:w-[140px] max-sm:h-[143px]  rounded-2xl">
             <Image
               src={"/team/Datta.png"}
               width={500}
@@ -18,12 +18,14 @@ function Team() {
             />
           </div>
           <div className=" mt-2">
-            <p className=" font-bold ">Krish Datta</p>
-            <p className=" font-sofiaSans  -mt-1 text-sm">Growth Consultant</p>
+            <p className=" font-bold max-md:text-sm">Krish Datta</p>
+            <p className=" font-sofiaSans max-md:text-xs -mt-1 text-sm">
+              Growth Consultant
+            </p>
           </div>
         </div>
         <div>
-          <div className=" w-[200px] h-[203px] max-sm:w-[140px] max-sm:h-[143px]  rounded-2xl">
+          <div className=" w-auto h-auto max-sm:w-[140px] max-sm:h-[143px]  rounded-2xl">
             <Image
               src={"/team/Amit.png"}
               width={500}
@@ -33,14 +35,14 @@ function Team() {
             />
           </div>
           <div className=" mt-2">
-            <p className=" font-bold ">Amit kumar Gothwal</p>
-            <p className=" font-sofiaSans -mt-1 text-sm">
+            <p className=" font-bold max-md:text-sm">Amit kumar Gothwal</p>
+            <p className=" font-sofiaSans max-md:text-xs -mt-1 text-sm">
               Founder, Creative Director
             </p>
           </div>
         </div>
         <div>
-          <div className=" w-[200px] h-[203px] max-sm:w-[140px] max-sm:h-[143px]  rounded-2xl">
+          <div className="  max-sm:w-[140px] max-sm:h-[143px]  rounded-2xl">
             <Image
               src={"/team/Radha.png"}
               width={500}
@@ -50,8 +52,8 @@ function Team() {
             />
           </div>
           <div className=" mt-2">
-            <p className=" font-bold ">Radha</p>
-            <p className=" font-sofiaSans  -mt-1 text-sm">
+            <p className=" font-bold max-md:text-sm">Radha</p>
+            <p className=" font-sofiaSans max-md:text-xs -mt-1 text-sm">
               Creative Director - Copy
             </p>
           </div>

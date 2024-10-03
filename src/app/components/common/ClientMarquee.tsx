@@ -33,7 +33,7 @@ const revers = [
 function ClientMarquee() {
   return (
     <div className=" w-full flex-col flex text-white my-20 max-md:my-7 items-center justify-center">
-      <div className=" max-md:text-3xl max-md:w-10/12  text-4xl font-extrabold tracking-ms leading-ms text-center w-full md:w-1/4">
+      <div className=" max-md:text-3xl w-1/5 max-md:w-9/12  text-4xl font-extrabold  text-center ">
         <p>Clients we&apos;ve partnered with</p>
       </div>
       <div className=" w-full mt-20">

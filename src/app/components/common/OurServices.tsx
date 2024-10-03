@@ -89,7 +89,7 @@ const socialMediaManagement = [
 ];
 const contentProduction = [
   {
-    title: "Coming soon...",
+    title: "Coming soon",
     bg: "#F6C4D4",
   },
 ];
@@ -98,9 +98,14 @@ function OurServices() {
     <>
       <div className=" text-white text-center md:flex justify-center items-center md:flex-col ">
         <p className=" text-4xl mb-4 font-extrabold max-md:text-3xl">
-          our services
+          Our services
         </p>
-        <p className=" text-xl w-1/2 max-md:w-full max-md:text-base max-md:px-7 font-sofiaSans font-light leading-ms px-6 my-2 text-zinc-100">
+        <p className=" text-xl  max-md:w-full max-md:hidden max-md:px-7 font-sofiaSans font-light leading-ms px-6 my-2 text-zinc-100">
+          Our comprehensive range of services spans from strategically defining
+          your <br /> brand&apos;s future direction to empowering its growth and
+          success in every dimension.
+        </p>
+        <p className=" text-xl max-md:flex hidden  max-md:w-full max-md:text-sm max-md:px-7 font-sofiaSans font-light leading-ms px-0 my-2 text-zinc-100">
           Our comprehensive range of services spans from strategically defining
           your brand&apos;s future direction to empowering its growth and
           success in every dimension.

@@ -2,8 +2,8 @@ import Image from "next/image";
 
 function HelloThere() {
   return (
-    <div className=" flex p-7 pt-40 text-white w-full justify-center gap-11 max-sm:flex-col max-sm:items-center">
-      <div className=" text-8xl font-bold  tracking-ms leading-ms">
+    <div className=" flex p-7 pt-32 text-white w-full justify-center gap-11 max-sm:flex-col max-sm:items-center">
+      <div className=" text-8xl font-bold ">
         <div className="  flex w-full">
           <p>Hello </p>
           <Image
@@ -16,7 +16,7 @@ function HelloThere() {
         </div>
         <p className=" -mt-10 ml-10">There</p>
       </div>
-      <p className=" w-1/2 max-sm:w-full text-xl font-sofiaSans">
+      <p className=" w-1/3 max-sm:w-full text-xl font-sofiaSans">
         At our core, we are a creative agency that specializes in branding and
         design, with a focus on authenticity and impact. We believe in
         challenging the status quo, shaping brands that stand out, and forming

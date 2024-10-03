@@ -41,7 +41,7 @@ function WorkCarousel() {
         ref={scrollRef}
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
-        className=" relative flex w-full cursor-none transition-all duration-200 scroll-smooth overflow-scroll snap-mandatory snap-x gap-6 p-4 px-28 mb-11 max-md:px-4"
+        className=" relative pl-[16%] flex w-full cursor-none transition-all duration-200 scroll-smooth overflow-scroll snap-mandatory snap-x gap-6 p-4 px-28  mb-11 max-md:px-4"
       >
         {[
           {
@@ -67,13 +67,13 @@ function WorkCarousel() {
             src={work.link}
             width={800}
             height={800}
-            className=" h-[87dvh] snap-center w-dvw object-cover object-center rounded-[1.75rem] max-md:h-[65dvh]"
+            className=" h-[80dvh] snap-center w-dvw object-cover object-center rounded-[1.75rem] max-md:h-[65dvh]"
             alt="image"
           />
         ))}
       </div>
 
-      <div className=" max-md:hidden flex -mt-10 max-md:px-3 text-white text-2xl w-full px-28 justify-between items-center ">
+      <div className=" max-md:hidden flex -mt-10 max-md:px-3 text-white text-2xl w-full px-[12.5%] justify-between items-center ">
         <div
           onClick={handleScrollLeft}
           className=" rounded-full border-zinc-500 hover:border-zinc-100 transition-all duration-500 cursor-pointer border p-3"

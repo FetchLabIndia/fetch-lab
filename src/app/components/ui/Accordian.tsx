@@ -18,7 +18,7 @@ export default function Accordion({
   return (
     <div className="flex flex-col w-full items-center mb-4 justify-center">
       <div
-        className="text-5xl max-sm:text-3xl border-t-2 max-md:w-full  py-7 pb-3 flex w-10/12 justify-between  cursor-pointer group"
+        className="text-5xl max-sm:text-3xl border-t-2 max-md:w-full  py-7 pb-3 flex w-9/12 justify-between  cursor-pointer group"
         onClick={() => setIsExpanded(!isExpanded)}
       >
         <p className="font-extrabold max-md:text-2xl">{title}</p>
@@ -44,7 +44,7 @@ export default function Accordion({
       <AnimatePresence>
         {isExpanded && (
           <motion.div
-            className="expand flex flex-wrap w-10/12 max-md:w-full overflow-hidden"
+            className="expand flex flex-wrap w-9/12 max-md:w-full overflow-hidden"
             initial={{ height: 0, opacity: 1 }}
             animate={{ height: "auto", opacity: 1 }}
             exit={{ height: 0, opacity: 1 }}

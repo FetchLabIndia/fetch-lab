@@ -9,21 +9,21 @@ import transition from "@/app/components/custom/Transition";
 function SingleBlog() {
   return (
     <>
-      <div className=" text-white  w-10/12 py-20 pt-32">
+      <div className=" text-white  w-9/12 py-20 pt-32">
         <div className=" flex justify-between">
-          <p className=" text-4xl max-md:text-xl font-extrabold w-10/12">
+          <p className=" text-4xl max-md:text-xl font-extrabold w-7/12">
             How Branding Shapes the Identity of Fashion Brands: A Fun Dive into
             Zudio’s Strategy
           </p>
 
-          <div className=" flex items-center gap-2  max-md:text-lg self-start text-2xl">
+          <div className=" flex items-center gap-2  max-md:text-lg self-start text-3xl">
             <FaLinkedin />
             <FaXTwitter className=" ml-1.5" />
             <ImFacebook />
           </div>
         </div>
 
-        <p className=" font-sofiaSans my-4  max-md:text-base text-lg">
+        <p className=" font-sofiaSans my-4 mb-5  max-md:text-base text-lg">
           October 01, 2024 • 5 minutes
         </p>
         <div className=" w-full h-full">
@@ -39,7 +39,7 @@ function SingleBlog() {
           <h1 className=" text-3xl  max-md:text-2xl font-extrabold">
             Introduction
           </h1>
-          <p>
+          <p className=" text-lg">
             Branding is like the secret sauce of any fashion brand--it’s what
             makes you crave more! Think of it as the outfit that brands wear to
             impress their audience. It’s not just about a pretty logo or a

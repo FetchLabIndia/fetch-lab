@@ -53,7 +53,7 @@ function Header() {
       )}
 
       <motion.header
-        className={`flex z-40 fixed max-md:px-4 max-md:left-0 top-0 max-md:w-full w-10/12 py-9 items-center justify-between transition-transform duration-300 ${
+        className={`flex z-40 fixed max-md:px-4 max-md:left-0 top-0 max-md:w-full w-9/12 py-9 items-center justify-between transition-transform duration-300 ${
           showHeader ? "translate-y-0" : "-translate-y-full"
         }`}
         initial={{ y: 0 }}

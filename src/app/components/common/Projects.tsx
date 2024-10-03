@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 export default function Project() {
   return (
     <div className=" flex items-center w-full  justify-center  py-7">
-      <div className=" bg-cuPurple font-extrabold text-8xl max-md:text-6xl rounded-3xl text-white w-10/12 max-md:w-full max-md:mx-4 flex-col flex text-center justify-center items-center h-[380px] max-md:h-[200px] ">
+      <div className=" bg-cuPurple font-extrabold text-8xl max-md:text-6xl rounded-3xl text-white w-9/12 max-md:w-full max-md:mx-4 flex-col flex text-center justify-center items-center h-[380px] max-md:h-[200px] ">
         <div className=" relative w-fit max-md:text-[3.5rem]">
           Got a project
           <Image
