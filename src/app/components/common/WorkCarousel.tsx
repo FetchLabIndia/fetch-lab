@@ -46,19 +46,19 @@ function WorkCarousel() {
         {[
           {
             slug: "/work/brew_mingle",
-            link: "/home/Maskgroup.webp",
+            link: "/home/2.jpg",
           },
           {
             slug: "/work/moodrobe",
-            link: "/home/Maskgroup(1).webp",
+            link: "/home/4.png",
           },
           {
             slug: "/work/iccs",
-            link: "/home/Maskgroup(2).webp",
+            link: "/home/3.png",
           },
           {
             slug: "/work/amythstore",
-            link: "/home/Maskgroup(3).webp",
+            link: "/home/1.jpg",
           },
         ].map((work) => (
           <Image

@@ -8,7 +8,7 @@ function WorkCard() {
         <Link
           href={`/work/${data?.slug}`}
           key={i}
-          className=" relative col-span-1 h-full w-full  rounded-2xl overflow-hidden"
+          className=" relative col-span-1 h-96 w-full  rounded-2xl overflow-hidden"
         >
           <Image
             src={data.image}
