@@ -106,7 +106,7 @@ function ContactForm() {
           </div>
           <textarea
             placeholder="Your message"
-            className="bg-foreground font-sofiaSans text-white outline-none placeholder:text-base text-base font-normal min-h-52 rounded-2xl p-3 w-full px-5"
+            className="bg-foreground font-light font-sofiaSans text-white outline-none placeholder:text-base text-base min-h-52 rounded-2xl p-3 w-full px-5"
           ></textarea>
           <Button variant="cuGreen" className="text-xl py-1.5">
             Get in touch

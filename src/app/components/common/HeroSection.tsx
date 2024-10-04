@@ -44,7 +44,7 @@ function HeroSection() {
             }}
           >
             <Button
-              className=" text-4xl max-sm:text-[1.5rem] max-sm:p-2 max-sm:px-10   -rotate-6 leading-ms tracking-ms  hover:bg-cuRed border-none p-3 px-7"
+              className=" text-4xl max-sm:text-[1.5rem] max-sm:p-2 max-sm:px-10  -rotate-6 hover:bg-cuPurple border-none p-3 px-7"
               variant="cuPurple"
             >
               GET IN TOUCH
