@@ -7,7 +7,7 @@ export interface blogsData {
   image: string;
   title: string;
   alt: string;
-  id?: number;
+  id?: string;
 }
 
 function BlogCard({
