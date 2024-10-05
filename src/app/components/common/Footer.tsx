@@ -1,6 +1,6 @@
 "use client";
 import { FiInstagram } from "react-icons/fi";
-import { FaLinkedin, FaMedium } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
 import Image from "next/image";
 import Button from "@/app/components/ui/Button";
 import Link from "next/link";
@@ -8,6 +8,7 @@ import { headerButtons } from "@/app/utils/lib/utils";
 import useNavigation from "@/app/hooks/useNavigation";
 import { motion } from "framer-motion";
 import { RiTwitterXFill } from "react-icons/ri";
+import { BsMedium } from "react-icons/bs";
 const bottomNav = [
   {
     title: "Work with us",
@@ -79,7 +80,7 @@ function Footer() {
               >
                 <FaLinkedin />
               </Link>
-              <FaMedium />
+              <BsMedium />
             </div>
           </div>
         </div>
