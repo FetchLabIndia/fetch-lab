@@ -1,11 +1,11 @@
 import { cn } from "@/app/utils/lib/cn";
 import React from "react";
 
-type ButtonProps = {
+interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   children: React.ReactNode;
   variant?: "cuYellow" | "cuRed" | "cuGreen" | "cuPurple"; // Optional prop for color variants
   className?: string; // Optional custom className prop
-};
+}
 
 function Button({
   children,
