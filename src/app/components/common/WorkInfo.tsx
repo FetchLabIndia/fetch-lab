@@ -21,7 +21,7 @@ function WorkInfo({
   };
 
   return (
-    <div className=" flex max-md:flex-col max-md:gap-y-4 items-start w-9/12 justify-between">
+    <div className=" flex max-md:flex-col max-md:gap-y-4 items-start max-md:w-full max-md:px-4 w-9/12 justify-between">
       <div className=" font-extrabold gap-4 flex flex-col text-5xl text-white ">
         <p>{heading}</p>
         <div className=" flex flex-wrap font-sofiaSans items-center gap-4">
@@ -35,11 +35,11 @@ function WorkInfo({
           ))}
         </div>
       </div>
-      <div className="text-white flex flex-col gap-7 text-2xl leading-ms">
+      <div className="text-white md:w-7/12 w-full flex flex-col gap-7 text-2xl leading-ms">
         <div className="flex justify-between font-sofiaSans font-semibold items-center gap-4">
-          <p>{title}</p>
+          <p className=" w-11/12">{title}</p>
           <CiCirclePlus
-            className="size-8 max-md:size-11 max-md:mb-2.5 cursor-pointer"
+            className="size-8 max-md:size-11 self-start max-md:mb-2.5 cursor-pointer"
             onClick={toggleAccordion}
           />
         </div>
@@ -56,7 +56,7 @@ function WorkInfo({
         >
           <p
             dangerouslySetInnerHTML={{ __html: desc }}
-            className="max-w-lg max-md:max-w-screen-md font-sofiaSans text-pretty text-lg font-light"
+            className="w-full max-md:max-w-screen-md font-sofiaSans text-start text-lg font-light"
           ></p>
         </motion.div>
       </div>

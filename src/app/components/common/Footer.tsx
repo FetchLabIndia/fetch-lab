@@ -90,7 +90,7 @@ function Footer() {
         alt="fetchLab logo"
         height={500}
         width={500}
-        className=" h-full w-full md:-ml-4 max-sm:h-auto max-md:px-3"
+        className=" h-full w-full md:-ml-5 max-sm:h-auto max-md:px-3"
       />
       <p className=" font-sofiaSans font-normal text-zinc-100 ">
         Copyright {new Date().getFullYear()} © fetchlab

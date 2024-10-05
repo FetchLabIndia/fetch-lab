@@ -57,7 +57,7 @@ function WorkCarousel() {
             link: "/home/3.png",
           },
           {
-            slug: "/work/amythstore",
+            slug: "/work/airlis",
             link: "/home/1.jpg",
           },
         ].map((work) => (

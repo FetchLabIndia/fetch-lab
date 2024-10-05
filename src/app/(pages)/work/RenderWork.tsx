@@ -28,7 +28,7 @@ function RenderWork({ slug }: { slug: SlugProg }) {
       <WorkImages images={slug?.images} />
       <hr className="w-full border-t border-zinc-800" />
       <div className=" text-white border-zinc-800 w-full flex justify-center items-center">
-        <div className=" w-9/12 max-md:text-3xl text-4xl py-11">
+        <div className=" w-9/12 max-md:w-full max-md:px-4 max-md:text-3xl text-4xl py-11">
           <p>See More</p>
           <div className="flex overflow-x-scroll snap-x snap-mandatory scroll-snap-x max-md:gap-2.5 gap-7 mt-7">
             {works.slice(0, 2).map((data, i) => (
