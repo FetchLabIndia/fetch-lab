@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import Header from "./components/common/Header";
-
 const geistSans = localFont({
   src: "./fonts/Kupertino-Primary-Font.ttf",
   weight: "100 900",
@@ -21,8 +20,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.className}  antialiased`}>
-        <div className=" z-10 w-full flex flex-col items-center justify-center">
+      <body className={`${geistSans.className} antialiased`}>
+        <div className="z-10 w-full flex flex-col items-center justify-center">
           <Header />
           {children}
         </div>

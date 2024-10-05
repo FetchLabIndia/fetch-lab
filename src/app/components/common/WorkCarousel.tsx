@@ -3,7 +3,6 @@ import Image from "next/image";
 import { IoChevronBack } from "react-icons/io5";
 import { motion } from "framer-motion";
 import useNavigation from "@/app/hooks/useNavigation";
-// hello@fetchlab.in
 function WorkCarousel() {
   const scrollRef = useRef<HTMLDivElement>(null);
   const handleScrollRight = () => {
@@ -41,7 +40,7 @@ function WorkCarousel() {
         ref={scrollRef}
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
-        className=" relative pl-[16%] flex w-full cursor-none transition-all duration-200 scroll-smooth overflow-scroll snap-mandatory snap-x gap-6 p-4 px-28  mb-11 max-md:px-4"
+        className=" relative pl-[16%] flex w-full cursor-none transition-all duration-200 scroll-smooth overflow-scroll snap-mandatory snap-x gap-5 p-4 px-28  mb-11 max-md:px-4"
       >
         {[
           {
@@ -73,7 +72,7 @@ function WorkCarousel() {
         ))}
       </div>
 
-      <div className=" max-md:hidden flex -mt-10 max-md:px-3 text-white text-2xl w-full px-[12.5%] justify-between items-center ">
+      <div className=" max-md:hidden flex-row flex -mt-10 max-md:px-3 text-white text-2xl w-full px-[12.5%] justify-between items-center ">
         <div
           onClick={handleScrollLeft}
           className=" rounded-full border-zinc-500 hover:border-zinc-100 transition-all duration-500 cursor-pointer border p-3"

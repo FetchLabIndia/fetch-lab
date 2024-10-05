@@ -27,7 +27,7 @@ function ClientMarquee() {
             <Image
               key={url}
               height={500}
-              className=" mx-5 size-10 w-auto"
+              className=" mx-5 size-11 w-auto"
               width={500}
               alt="client-logo-image"
               src={url}
@@ -41,7 +41,7 @@ function ClientMarquee() {
             <Image
               key={url}
               height={500}
-              className=" mx-5 size-8 w-auto"
+              className=" mx-5 size-9 w-auto"
               width={500}
               alt="client-logo-image"
               src={url}

@@ -28,7 +28,9 @@ function ContactForm() {
     setEyePosition({ x: newX, y: newY });
     setCursorPos({ x: event.pageX, y: event.pageY });
   };
-
+  // const sendMail = ()=>{
+  //   "hello@fetchlab.in"
+  // }
   return (
     <div
       className="flex w-full mt-28 py-11 border-b border-zinc-800 items-start justify-center"
@@ -99,13 +101,11 @@ function ContactForm() {
           <div className="relative w-full font-sofiaSans">
             <select className="bg-foreground outline-none placeholder:text-base text-base font-normal text-white relative appearance-none rounded-full p-3 w-full px-5 pr-10">
               <option value="">How can we help you?</option>
-              <option value="">How can we help you?</option>
-              <option value="">How can we help you?</option>
             </select>
             <FaChevronDown className="absolute right-4 top-1/2 transform -translate-y-1/2 text-white pointer-events-none" />
           </div>
           <textarea
-            placeholder="Your message"
+            placeholder="How Can we help you?"
             className="bg-foreground font-light font-sofiaSans text-white outline-none placeholder:text-base text-base min-h-52 rounded-2xl p-3 w-full px-5"
           ></textarea>
           <Button variant="cuGreen" className="text-xl py-1.5">

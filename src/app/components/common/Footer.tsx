@@ -85,6 +85,7 @@ function Footer() {
           </div>
         </div>
       </div>
+      <div className="bg-noise"></div>
       <Image
         src={"/logos/Logo(White).svg"}
         alt="fetchLab logo"
