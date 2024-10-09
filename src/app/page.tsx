@@ -40,6 +40,12 @@ function Home() {
           setStatus("");
         }, 2000);
         return () => clearTimeout(t);
+      } else {
+        setStatus("Error submitting...");
+        const t = setTimeout(() => {
+          setStatus("");
+        }, 2000);
+        return () => clearTimeout(t);
       }
     } catch (err) {
       console.log(err);
