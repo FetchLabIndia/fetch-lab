@@ -24,13 +24,16 @@ function Home() {
     try {
       e.preventDefault();
       setLoading(true);
-      const res = await fetch("/api/mail", {
-        method: "POST",
-        headers: {
-          "content-type": "application/json",
-        },
-        body: JSON.stringify({ sender }),
-      });
+      const res = await fetch(
+        "https://email-sender-beta-henna.vercel.app/api/mail",
+        {
+          method: "POST",
+          headers: {
+            "content-type": "application/json",
+          },
+          body: JSON.stringify({ sender }),
+        }
+      );
       if (res.ok) {
         setStatus("Form submitted successfully");
         const t = setTimeout(() => {
