@@ -100,7 +100,17 @@ function ContactForm() {
           />
           <div className="relative w-full font-sofiaSans">
             <select className="bg-foreground outline-none placeholder:text-base text-base font-normal text-white relative appearance-none rounded-full p-3 w-full px-5 pr-10">
-              <option value="">How can we help you?</option>
+              <option value="How can we help you?">How can we help you?</option>
+              <option value="Branding">Branding</option>
+              <option value="Social media optimization">
+                Social media optimization
+              </option>
+              <option value="Social media management">
+                Social media management
+              </option>
+              <option value="Website Design/Development">
+                Website Design/Development
+              </option>
             </select>
             <FaChevronDown className="absolute right-4 top-1/2 transform -translate-y-1/2 text-white pointer-events-none" />
           </div>

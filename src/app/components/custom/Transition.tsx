@@ -23,7 +23,7 @@ const transition = <P extends object>(Component: ComponentType<P>) => {
             <>
               {/* Slide-out animation */}
               <motion.div
-                className="fixed top-0 left-0 w-screen h-screen z-50 bg-green-500"
+                className="fixed top-0 left-0 w-screen h-screen z-50 bg-cuPurple"
                 initial={{ scaleX: 1 }}
                 animate={{ scaleX: 1 }}
                 exit={{ scaleX: 0 }}

@@ -19,7 +19,7 @@ function Page() {
     <>
       {isAnimating && (
         <motion.div
-          className="fixed top-0 left-0 z-50 w-screen h-screen bg-green-500"
+          className="fixed top-0 left-0 z-50 w-screen h-screen bg-cuPurple"
           initial={{ scaleX: 0 }} // Start off-screen
           animate={{ scaleX: 1 }} // Slide in from the right
           transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}

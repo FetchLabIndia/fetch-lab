@@ -11,7 +11,7 @@ function HeroSection() {
     <>
       {isAnimating && (
         <motion.div
-          className="fixed top-0  left-0 z-50 w-screen h-screen bg-green-500"
+          className="fixed top-0  left-0 z-50 w-screen h-screen bg-cuPurple"
           initial={{ scaleX: 0 }} // Start off-screen
           animate={{ scaleX: 1 }} // Slide in from the right
           transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
@@ -20,13 +20,13 @@ function HeroSection() {
         />
       )}
 
-      <div className="section-home-hero text-white">
-        <div className="home-hero-component">
-          <div className="container-home-hero">
+      <div className="section-home-hero text-white w-full">
+        <div className="home-hero-component w-full">
+          <div className="container-home-hero w-full">
             <div className="home-hero-content flex justify-center ">
-              <h1 className="hero-header w-11/12  max-md:text-3xl font-extrabold text-6xl text-balance">
-                We develop innovative solutions to your most difficult problems
-                using precise planning and extreme imagination
+              <h1 className="hero-header  w-full  max-md:text-3xl font-extrabold text-6xl text-balance">
+                We develop innovative solutions <br /> to your most difficult
+                problems using precise <br /> planning and extreme imagination
               </h1>
               <div className="scroll-down-button w-full max-md:mb-28 flex justify-center items-center">
                 <Image
@@ -47,7 +47,7 @@ function HeroSection() {
             <motion.div className="shake">
               <Button
                 onClick={() => handleNavigate("/contact-us")}
-                className=" text-4xl max-sm:text-[1.5rem] max-sm:p-2 max-sm:px-10  -rotate-6 hover:bg-cuPurple border-none p-3 px-7"
+                className=" text-5xl max-sm:text-[1.5rem] max-sm:p-2 max-sm:px-10  -rotate-6 hover:bg-cuPurple border-none p-3 px-7"
                 variant="cuPurple"
               >
                 Get in touch

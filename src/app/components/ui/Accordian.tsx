@@ -61,7 +61,7 @@ export default function Accordion({
                     backgroundColor: bg,
                     color: bg === "#6B34CD" ? "white" : "black",
                   }}
-                  className=" text-lg max-md:text-sm font-[900] p-[0.20rem] px-3 leading-ms rounded-full border-transparent border-2 transition-all duration-500 text-black"
+                  className=" text-lg max-md:text-sm font-[900] p-[0.20rem] px-6 leading-ms rounded-full border-transparent border-2 transition-all duration-500 text-black"
                 >
                   {title}
                 </div>

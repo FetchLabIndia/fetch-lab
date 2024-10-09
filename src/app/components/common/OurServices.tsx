@@ -83,7 +83,7 @@ const socialMediaManagement = [
     bg: "#F5E9C9",
   },
   {
-    title: "Platform Management (FB, IG, Twitter, LinkedIn)",
+    title: "Platform Management",
     bg: "#AEFBBE",
   },
 ];
@@ -97,7 +97,7 @@ function OurServices() {
   return (
     <>
       <div className=" text-white text-center md:flex justify-center items-center md:flex-col ">
-        <p className=" text-4xl mb-4 font-extrabold max-md:text-3xl">
+        <p className=" text-4xl mb-1.5 font-extrabold max-md:text-3xl">
           Our services
         </p>
         <p className=" text-xl  max-md:w-full max-md:hidden max-md:px-7 font-sofiaSans font-light leading-ms px-6 my-2 text-zinc-100">

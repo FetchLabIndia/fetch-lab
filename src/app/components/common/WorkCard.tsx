@@ -3,12 +3,12 @@ import Image from "next/image";
 import Link from "next/link";
 function WorkCard() {
   return (
-    <div className=" grid grid-cols-2 max-sm:grid-cols-1 w-full gap-y-10 gap-4">
+    <div className=" grid grid-cols-2 max-sm:grid-cols-1 w-full gap-y-5 gap-4">
       {works.map((data, i) => (
         <Link
           href={`/work/${data?.slug}`}
           key={i}
-          className=" relative col-span-1 h-96 w-full  rounded-2xl overflow-hidden"
+          className=" relative col-span-1 h-[469px] md:h-[400px]  w-full  rounded-2xl overflow-hidden"
         >
           <Image
             src={data.image}

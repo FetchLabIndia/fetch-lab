@@ -2,7 +2,7 @@ import Image from "next/image";
 
 function Team() {
   return (
-    <div className=" flex w-full items-center flex-col justify-center gap-7 text-white">
+    <div className=" flex w-full mb-8 items-center flex-col justify-center gap-7 text-white">
       <p className="font-extrabold text-4xl leading-ms tracking-ms ">
         Meet the <span className=" text-cuGreen">Visionaries</span>
       </p>
@@ -13,12 +13,12 @@ function Team() {
               src={"/team/Datta.png"}
               width={500}
               height={500}
-              className=" w-full h-full"
-              alt="Krish Datta"
+              className=" w-[186px] h-[203px]"
+              alt="Aniket Grover"
             />
           </div>
           <div className=" mt-2">
-            <p className=" font-bold max-md:text-sm">Krish Datta</p>
+            <p className=" font-bold max-md:text-sm">Aniket Grover</p>
             <p className=" font-sofiaSans max-md:text-xs -mt-1 text-sm">
               Growth Consultant
             </p>
@@ -30,7 +30,7 @@ function Team() {
               src={"/team/Amit.png"}
               width={500}
               height={500}
-              className=" w-full h-full"
+              className=" w-[186px] h-[203px]"
               alt="Amit kumar Gothwal"
             />
           </div>
@@ -47,7 +47,7 @@ function Team() {
               src={"/team/Radha.png"}
               width={500}
               height={500}
-              className=" w-full h-full"
+              className=" w-[186px] h-[203px]"
               alt="Radha"
             />
           </div>

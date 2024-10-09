@@ -80,7 +80,7 @@ function BlogCard({
             </motion.div>
           </div>
 
-          <h2 className="text-xl max-md:text-base max-md:w-full mt-4">
+          <h2 className="text-2xl max-md:text-base max-md:w-full mt-4">
             {data?.title}
           </h2>
         </div>

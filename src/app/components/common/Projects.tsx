@@ -5,17 +5,20 @@ import useNavigation from "@/app/hooks/useNavigation";
 
 export default function Project() {
   const imageVariants = {
-    hidden: { scale: 0 },
-    visible: { scale: 1, transition: { duration: 0.3 } },
+    hidden: { scale: 0 }, // Start hidden with scale 0 and opacity 0
+    visible: {
+      scale: 1,
+    },
   };
 
   const { isAnimating, handleAnimationComplete, handleNavigate } =
     useNavigation();
+
   return (
     <>
       {isAnimating && (
         <motion.div
-          className="fixed top-0  left-0 z-50 w-screen h-screen bg-green-500"
+          className="fixed top-0 left-0 z-50 w-screen h-screen bg-cuPurple"
           initial={{ scaleX: 0 }} // Start off-screen
           animate={{ scaleX: 1 }} // Slide in from the right
           transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
@@ -31,6 +34,7 @@ export default function Project() {
               variants={imageVariants}
               initial="hidden"
               whileInView="visible"
+              transition={{ ...imageVariants.visible, delay: 0.1 }} // Delay for the first image
               className="absolute top-7 -left-[5rem] max-md:-left-2.5 max-md:-top-[3.3rem] max-md:h-[50px] -rotate-12"
             >
               <Image
@@ -38,13 +42,14 @@ export default function Project() {
                 height={70}
                 width={70}
                 alt="laptop"
-                className="  top-7 -left-[5rem] max-md:-left-2.5 max-md:-top-[3.3rem] max-md:h-[50px] -rotate-12"
+                className="top-7 -left-[5rem] max-md:-left-2.5 max-md:-top-[3.3rem] max-md:h-[50px] -rotate-12"
               />
             </motion.div>
             <motion.div
               variants={imageVariants}
               initial="hidden"
               whileInView="visible"
+              transition={{ ...imageVariants.visible, delay: 0.2 }} // Delay for the second image
               className="absolute top-16 -right-20 max-md:-top-[2rem] max-md:-right-[1rem] max-md:rotate-[27deg] max-md:h-[50px] -rotate-12"
             >
               <Image
@@ -62,6 +67,7 @@ export default function Project() {
               variants={imageVariants}
               initial="hidden"
               whileInView="visible"
+              transition={{ ...imageVariants.visible, delay: 0.3 }} // Delay for the third image
               className="absolute top-7 -left-[4.5rem] max-md:-bottom-[4rem] max-md:right-0 max-md:h-[50px] -rotate-12"
             >
               <Image src={"/project/up.svg"} height={60} width={60} alt="up" />
@@ -70,6 +76,7 @@ export default function Project() {
               variants={imageVariants}
               initial="hidden"
               whileInView="visible"
+              transition={{ ...imageVariants.visible, delay: 0.4 }} // Delay for the fourth image
               className="absolute top-7 -right-[4.5rem] max-md:top-[2rem] max-md:-right-[4rem] max-md:h-[50px] -rotate-12 z-10"
             >
               <Image
@@ -82,7 +89,7 @@ export default function Project() {
           </div>
 
           <div className="-mt-12 relative w-fit">
-            <motion.div className=" shake">
+            <motion.div className="shake">
               <Button
                 onClick={() => handleNavigate("/contact-us")}
                 className="relative text-4xl leading-ms tracking-ms -rotate-6 hover:bg-cuGreen border-none text-black p-3 px-7 hover:text-black max-md:top-[2.5rem] max-md:text-[1.7rem] max-md:p-2 max-md:px-7"
@@ -96,6 +103,7 @@ export default function Project() {
               variants={imageVariants}
               initial="hidden"
               whileInView="visible"
+              transition={{ ...imageVariants.visible, delay: 0.5 }} // Delay for the fifth image
               className="absolute -bottom-9 left-1/2 max-md:-bottom-[4.5rem] max-md:left-[6rem] max-md:h-[50px]"
             >
               <Image

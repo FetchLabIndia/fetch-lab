@@ -7,6 +7,7 @@ import { AnimatePresence, motion, useAnimate } from "framer-motion";
 import { MenuToggle } from "../ui/MenuToggle";
 import useHideHeaderOnScroll from "@/app/hooks/useShowHeader";
 import useNavigation from "@/app/hooks/useNavigation";
+import Link from "next/link";
 
 function useMenuAnimation(isOpen: boolean) {
   const [scope, animate] = useAnimate();
@@ -43,7 +44,7 @@ function Header() {
     <>
       {isAnimating && (
         <motion.div
-          className="fixed top-0  left-0 z-50 w-screen h-screen bg-green-500"
+          className="fixed top-0  left-0 z-50 w-screen h-screen bg-cuPurple"
           initial={{ scaleX: 0 }} // Start off-screen
           animate={{ scaleX: 1 }} // Slide in from the right
           transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
@@ -59,7 +60,7 @@ function Header() {
         initial={{ y: 0 }}
         animate={{ y: showHeader ? 0 : -100 }}
       >
-        <div onClick={() => handleNavigate("/")}>
+        <div className=" cursor-pointer" onClick={() => handleNavigate("/")}>
           <Image
             className="max-md:hidden"
             src={"/logos/Logo(White).svg"}
@@ -77,7 +78,11 @@ function Header() {
         </div>
         <div className="flex max-md:hidden items-center justify-center gap-6">
           {headerButtons.map(({ title, variant, className, link }) => (
-            <div onClick={() => handleNavigate(link)} key={title}>
+            <Link
+              href={link}
+              onClick={(e) => (e.stopPropagation(), handleNavigate(link))}
+              key={title}
+            >
               <Button
                 className={className}
                 variant={
@@ -86,7 +91,7 @@ function Header() {
               >
                 {title}
               </Button>
-            </div>
+            </Link>
           ))}
         </div>
         <div
@@ -112,11 +117,15 @@ function Header() {
             className="flex z-30 fixed bg-black flex-col h-screen w-screen items-center justify-center gap-y-10"
           >
             {headerButtons.map(({ title, link }) => (
-              <div onClick={() => handleNavigate(link)} key={title}>
+              <Link
+                href={link}
+                onClick={(e) => (e.stopPropagation(), handleNavigate(link))}
+                key={title}
+              >
                 <Button className={"text-2xl w-[250px]"} variant={"cuGreen"}>
                   {title}
                 </Button>
-              </div>
+              </Link>
             ))}
             <motion.div
               animate={{ y: [0, -7, 0] }} // Moves up by 20px and then down
