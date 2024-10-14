@@ -65,13 +65,16 @@ function WorkCarousel() {
               link: "/home/1.jpg",
             },
           ].map((work) => (
-            <CarouselItem key={work.link}>
+            <CarouselItem
+              key={work.link}
+              className=" h-[90dvh] object-cover  max-md:h-[65dvh] rounded-2xl "
+            >
               <Image
                 onClick={() => handleNavigate(work.slug)}
                 src={work.link}
                 width={800}
                 height={800}
-                className=" h-[80dvh] snap-center w-dvw object-cover object-center rounded-[1.75rem] max-md:h-[65dvh]"
+                className=" h-full w-full  object-center rounded-2xl"
                 alt="image"
               />
             </CarouselItem>
@@ -79,7 +82,7 @@ function WorkCarousel() {
         </CarouselContent>
       </Carousel>
 
-      <div className=" flex justify-between w-full text-2xl text-white px-28 max-md:hidden">
+      <div className=" flex justify-between w-full text-2xl text-white px-28 max-md:hidden -mt-11">
         <div
           onClick={handleScrollLeft}
           className=" rounded-full border-zinc-500 hover:border-zinc-100 transition-all duration-500 cursor-pointer border p-3"

@@ -8,7 +8,7 @@ function WorkCard() {
         <Link
           href={`/work/${data?.slug}`}
           key={i}
-          className=" relative col-span-1 h-[469px] md:h-[400px]  w-full  rounded-2xl overflow-hidden"
+          className=" max-md:h-fit relative col-span-1 h-[469px] md:h-[400px]  w-full  rounded-2xl overflow-hidden"
         >
           <Image
             src={data.image}
@@ -17,13 +17,13 @@ function WorkCard() {
             width={400}
             className=" h-full w-full object-cover max-sm:h-[350px]"
           />
-          <div className=" absolute text-black flex max-sm:flex-wrap items-center gap-2.5 bottom-5 left-4">
+          <div className=" absolute  flex-wrap text-black flex max-sm:flex-wrap items-center gap-2.5 bottom-5 left-4">
             {data.tags.map((data, i) => (
               <p
                 key={i}
                 className={`${
                   data.includes("Coming") && "opacity-70"
-                } px-3 py-1 font-sofiaSans font-semibold text-xs  bg-white rounded-full`}
+                } px-2 py-1 font-sofiaSans font-semibold text-xs  bg-white rounded-full`}
               >
                 {data}
               </p>

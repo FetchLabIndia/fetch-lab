@@ -37,7 +37,7 @@ export default function Accordion({
               className="opacity-0 group-hover:opacity-100 max-sm:group-hover:hidden transition-opacity duration-500"
             />
           </motion.div>
-          <p className="font-sofiaSans ">0{index}</p>
+          <p className="font-sofiaSans font-light ">0{index}</p>
         </div>
       </div>
 
@@ -61,7 +61,7 @@ export default function Accordion({
                     backgroundColor: bg,
                     color: bg === "#6B34CD" ? "white" : "black",
                   }}
-                  className=" text-lg max-md:text-sm font-[900] p-[0.20rem] px-6 leading-ms rounded-full border-transparent border-2 transition-all duration-500 text-black"
+                  className=" text-2xl max-md:text-base font-[900] p-[0.20rem] px-4 leading-ms rounded-full border-transparent border-2 transition-all max-md:px-2.5 duration-500 text-black"
                 >
                   {title}
                 </div>

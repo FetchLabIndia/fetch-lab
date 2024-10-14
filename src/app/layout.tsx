@@ -10,7 +10,7 @@ const geistSans = localFont({
 export const metadata: Metadata = {
   title: "FetchLab",
   description: "",
-  icons: ["/logos/favicon.png"],
+  icons: ["/logos/favicon.svg"],
 };
 
 export default function RootLayout({

@@ -122,7 +122,7 @@ function Header() {
                 onClick={(e) => (e.stopPropagation(), handleNavigate(link))}
                 key={title}
               >
-                <Button className={"text-2xl w-[250px]"} variant={"cuGreen"}>
+                <Button className={"text-3xl w-[240px]"} variant={"cuGreen"}>
                   {title}
                 </Button>
               </Link>

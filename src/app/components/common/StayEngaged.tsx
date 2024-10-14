@@ -54,7 +54,7 @@ function StayEngaged() {
             </Button>
           </div>
         </div>
-        <div className=" w-7/12 max-md:w-full max-md:justify-center px-10 flex justify-end items-center">
+        <div className=" w-7/12 max-md:mt-5 max-md:w-full max-md:justify-center px-10 flex justify-end items-center">
           <div
             onClick={scrollToTop}
             className="relative cursor-pointer flex justify-center items-center"

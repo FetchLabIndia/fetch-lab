@@ -50,7 +50,7 @@ function JoinTeam() {
             alt="thinking"
           />
         </div>
-        <p className="max-sm:text-7xl text-[#151515]">Join the </p>
+        <p className="max-sm:text-7xl text-[#151515] mb-2">Join the </p>
         <div className="-mt-4 relative w-fit">
           <p className="max-sm:text-7xl text-[#151515]">Team</p>
           <motion.img
@@ -62,7 +62,7 @@ function JoinTeam() {
             height={120}
             width={120}
             alt="thinking"
-            className="-mt-4 absolute -bottom-9 max-sm:left-[8rem] -left-[5.4rem]"
+            className="-mt-4 absolute -bottom-11 z-10 max-sm:left-[8rem] -left-[5.4rem]"
           />
           <motion.img
             variants={imageVariants}
@@ -73,7 +73,7 @@ function JoinTeam() {
             height={90}
             width={90}
             alt="thinking"
-            className="-mt-4 absolute -bottom-7 z-10 -right-24 max-sm:right-[5rem] max-sm:-bottom-[11rem]"
+            className="-mt-4 absolute -bottom-10 z-10 -right-24 max-sm:right-[5rem] max-sm:-bottom-[11rem]"
           />
         </div>
         <div className="flex max-sm:flex-col items-center gap-16 w-full justify-center">
@@ -93,7 +93,7 @@ function JoinTeam() {
               }
               className="-rotate-12 hover:text-black hover:bg-cuYellow border-none text-4xl p-3 px-6"
             >
-              See the openings
+              See openings
             </Button>
           </motion.div>
         </div>

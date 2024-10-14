@@ -22,7 +22,7 @@ function Footer() {
   const { handleNavigate, handleAnimationComplete, isAnimating } =
     useNavigation();
   return (
-    <footer className=" flex max-md:w-full w-9/12 py-9 flex-col font-medium items-center justify-center">
+    <footer className=" flex max-md:w-full w-9/12 py-9 flex-col font-medium items-center justify-center max-md:pb-4">
       {isAnimating && (
         <motion.div
           className="fixed top-0  left-0 z-50 w-screen h-screen bg-cuPurple"
@@ -35,7 +35,7 @@ function Footer() {
       )}
 
       <div className=" flex max-md:flex-col max-md:gap-7 max-md:px-4 w-full mb-8 justify-between">
-        <div className=" flex flex-wrap items-center gap-4">
+        <div className=" flex flex-wrap items-center gap-1.5">
           {headerButtons.map(({ title, variant, link, className }) => (
             <Button
               onClick={() => handleNavigate(link)}
@@ -48,22 +48,22 @@ function Footer() {
             </Button>
           ))}
         </div>
-        <div className=" flex max-md:flex-col max-md:items-start items-center justify-evenly flex-grow max-md:gap-2.5">
+        <div className=" flex max-md:flex-col max-md:items-start items-center justify-evenly flex-grow max-md:gap-2">
           {bottomNav.map(({ title, mail }) => (
             <div
               key={title}
-              className=" flex text-white flex-col items-start gap-1.5"
+              className=" flex text-white flex-col items-start gap-1.5 max-md:gap-0"
             >
               <p className="  font-extrabold text-lg ">{title}</p>
               <Link
-                className=" font-light font-sofiaSans text-lg text-zinc-200"
+                className=" font-light max-md:-mt-1 font-sofiaSans text-lg text-zinc-200 mb-2"
                 href={`mailto:${mail}`}
               >
                 {mail}
               </Link>
             </div>
           ))}
-          <div className=" flex text-white flex-col items-start gap-2">
+          <div className=" flex text-white flex-col items-start gap-2 max-md:gap-0">
             <p className="  font-extrabold text-lg ">follow us</p>
             <div className=" flex items-center text-2xl gap-2">
               <Link
@@ -79,7 +79,7 @@ function Footer() {
               >
                 <FaLinkedin />
               </Link>
-              <Link href={"flames.design/fetchlab2024"} target="_blank">
+              <Link href={"https://flames.design/fetchlab2024"} target="_blank">
                 <svg
                   width="27"
                   height="27"
@@ -105,7 +105,7 @@ function Footer() {
         width={500}
         className=" h-full w-full md:-ml-5 max-sm:h-auto max-md:px-3"
       />
-      <p className=" font-sofiaSans font-normal text-zinc-100 ">
+      <p className=" font-sofiaSans font-light text-zinc-200 max-md:mt-4 ">
         Copyright {new Date().getFullYear()} © fetchlab
       </p>
     </footer>

@@ -64,19 +64,23 @@ export const works = [
   {
     slug: "brew_mingle",
     image: "/Brewmingle/Brewmingle-01.jpg",
-    tags: ["Branding & Design"],
+    tags: ["Brand identity & Design"],
   },
   {
     slug: "moodrobe",
     image: "/Moodrobe/Moodrobe_Brand_Identity_Final-15.jpg",
-    tags: ["Branding & Design", "merchandise", "Social media Managment"],
+    tags: ["Brand identity & Design", "merchandise", "Social media Managment"],
   },
-  { slug: "iccs", image: "/ICCS/ICCS-01.jpg", tags: ["Branding & Design"] },
+  {
+    slug: "iccs",
+    image: "/ICCS/ICCS-01.jpg",
+    tags: ["Brand identity & Design"],
+  },
   {
     slug: "airlis",
     image: "/AmythStore/AmythBranding-02.jpg",
     tags: [
-      "Branding & Design",
+      "Brand identity  & Design",
       "Social media Managment",
       "Photography",
       "Creative Direction",
@@ -90,7 +94,7 @@ export const workInfo = [
   {
     heading: "MoodRobe",
     slug: "moodrobe",
-    tags: ["Branding & Design", "merchandise", "Social media Managment"],
+    tags: ["Brand identity  & Design", "merchandise", "Social media Managment"],
     title: "Moodrobe: A Blank Canvas for Minimalist Fashion",
     images: [
       "/Moodrobe/Firstimage.png",
@@ -127,7 +131,7 @@ What made this project truly satisfying was knowing that we weren’t just creat
   {
     heading: "Brew mingle",
     slug: "brew_mingle",
-    tags: ["Branding & Design"],
+    tags: ["Brand identity  & Design"],
     title: "Brewing Conversations in Houston",
     images: [
       "/Brewmingle/Brewmingle-01.jpg",
@@ -151,7 +155,7 @@ In the process, we didn’t just create a logo; we helped tell the story of a br
   {
     heading: "ICCS",
     slug: "iccs",
-    tags: ["Branding & Design"],
+    tags: ["Brand identity  & Design"],
     title: "ICCS: Balancing Professionalism and Warmth in the BPO Space",
     images: [
       "/ICCS/ICCS-01.jpg",
@@ -183,7 +187,7 @@ A key part of our strategy was creating a design system that felt professional y
     heading: "Airlis",
     slug: "airlis",
     tags: [
-      "Branding & Design",
+      "Brand identity  & Design",
       "Social media Managment",
       "Photography",
       "Creative Direction",
@@ -228,7 +232,7 @@ export const blogsInfo = [
   {
     id: "1",
     title: `How Branding Shapes the Identity of Fashion Brands: A Fun Dive into Zudio’s Strategy`,
-    date: "October 01, 2024 • 5 minutes",
+    date: "October 16, 2024 • 5 minutes",
     image: "/blogs/BlogImages-01.svg",
     body: `<div style="margin-top: 40px; margin-bottom: 40px; font-family: 'Sofia Sans', sans-serif;">
   <h1 style="font-size: 1.875rem; line-height: 2.25rem; max-width: 768px; font-weight: 800;">
@@ -332,7 +336,7 @@ export const blogsInfo = [
     id: "2",
     title:
       "Social Media Marketing: The Secret Sauce Behind Swiggy and Zomato's Success!",
-    date: "September 29, 2024 • 8 minutes",
+    date: "October 10, 2024 • 8 minutes",
     image: "/blogs/BlogImages-02.svg",
     body: ` <div style="margin: 2.5rem 0; font-family:'Sofia Sans', sans-serif;">
     <h1 style="font-size: 2rem; font-weight: 800;">Introduction:</h1>
@@ -390,7 +394,7 @@ export const blogsInfo = [
   {
     id: "4",
     title: `Can Blogs Still Attract an Audience? Here’s Why They’re Still a Game-Changer for Brands!`,
-    date: "September 27, 2024 • 4 minutes",
+    date: "October 01, 2024 • 4 minutes",
     image: "/blogs/BlogImages-03.svg",
     body: `<div style="margin-top: 40px; margin-bottom: 40px; font-family: 'Sofia Sans', sans-serif;">
   <h1 style="font-size: 1.875rem; line-height: 2.25rem; max-width: 768px; font-weight: 800;">
@@ -470,7 +474,7 @@ export const blogsInfo = [
     id: "3",
     title:
       "Why Your Brand Needs to Start Repurposing Content: The Fun Way to Work Smarter, Not Harder!",
-    date: "September 21, 2024 • 4 minutes",
+    date: "October 05, 2024 • 4 minutes",
     image: "/blogs/BlogImages-04.svg",
     body: `<div style="margin-top: 40px; margin-bottom: 40px; font-family: 'Sofia Sans', sans-serif;">
   <h1 style="font-size: 1.875rem; line-height: 2.25rem; max-width: 768px; font-weight: 800;">
@@ -581,7 +585,7 @@ export const blogsInfo = [
     id: "5",
     title:
       "Smart Marketing: How AI is Making Brands Connect and Wow Customers Like a Pro!",
-    date: "September 17, 2024 • 4 minutes",
+    date: "September 25, 2024 • 4 minutes",
     image: "/blogs/BlogImages-05.svg",
     body: `<div style="margin-top: 40px; margin-bottom: 40px; font-family: 'Sofia Sans', sans-serif;">
   <h1 style="font-size: 1.875rem; line-height: 2.25rem; max-width: 768px; font-weight: 800;">
