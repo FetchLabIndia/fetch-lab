@@ -62,7 +62,7 @@ function JoinTeam() {
             height={120}
             width={120}
             alt="thinking"
-            className="-mt-4 absolute -bottom-11 z-10 max-sm:left-[8rem] -left-[5.4rem]"
+            className="-mt-4 absolute -bottom-11 z-10 max-md:-bottom-16 max-sm:left-[8rem] -left-[5.4rem]"
           />
           <motion.img
             variants={imageVariants}
@@ -81,7 +81,7 @@ function JoinTeam() {
             <Button
               onClick={() => handleNavigate("/contact-us")}
               variant="cuRed"
-              className="bg-cuRed ml-20 hover:bg-cuRed hover:text-black border-none rotate-12 text-4xl p-3 px-6"
+              className="bg-cuRed ml-20 max-md:ml-0 hover:bg-cuRed hover:text-black border-none rotate-12 text-4xl p-3 px-6"
             >
               Reach out
             </Button>

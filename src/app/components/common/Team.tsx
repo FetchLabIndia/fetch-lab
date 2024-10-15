@@ -8,7 +8,7 @@ function Team() {
       </p>
       <div className=" flex items-center gap-6  text-base justify-center max-sm:flex-wrap max-sm:px-2">
         <div>
-          <div className="  max-sm:w-[140px] max-sm:h-[143px]  rounded-2xl">
+          <div className="  max-sm:w-[180px] max-sm:h-auto  rounded-2xl">
             <Image
               src={"/team/Datta.png"}
               width={500}
@@ -25,7 +25,7 @@ function Team() {
           </div>
         </div>
         <div>
-          <div className=" w-auto h-auto max-sm:w-[140px] max-sm:h-[143px]  rounded-2xl">
+          <div className=" w-auto h-auto max-sm:w-[180px] max-sm:h-auto  rounded-2xl">
             <Image
               src={"/team/Amit.png"}
               width={500}
@@ -42,7 +42,7 @@ function Team() {
           </div>
         </div>
         <div>
-          <div className="  max-sm:w-[140px] max-sm:h-[143px]  rounded-2xl">
+          <div className="  max-sm:w-[180px] max-sm:h-auto  rounded-2xl">
             <Image
               src={"/team/Radha.png"}
               width={500}
