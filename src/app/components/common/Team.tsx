@@ -18,8 +18,8 @@ function Team() {
             />
           </div>
           <div className=" mt-2">
-            <p className=" font-bold max-md:text-sm">Aniket Grover</p>
-            <p className=" font-sofiaSans max-md:text-xs -mt-1 text-sm">
+            <p className=" font-semibold max-md:text-sm">Aniket Grover</p>
+            <p className=" font-sofiaSans font-light max-md:text-xs -mt-1 text-sm">
               Growth Consultant
             </p>
           </div>
@@ -35,8 +35,8 @@ function Team() {
             />
           </div>
           <div className=" mt-2">
-            <p className=" font-bold max-md:text-sm">Amit kumar Gothwal</p>
-            <p className=" font-sofiaSans max-md:text-xs -mt-1 text-sm">
+            <p className=" font-semibold max-md:text-sm">Amit kumar Gothwal</p>
+            <p className=" font-sofiaSans font-light max-md:text-xs -mt-1 text-sm">
               Founder, Creative Director
             </p>
           </div>
@@ -52,8 +52,8 @@ function Team() {
             />
           </div>
           <div className=" mt-2">
-            <p className=" font-bold max-md:text-sm">Radha</p>
-            <p className=" font-sofiaSans max-md:text-xs -mt-1 text-sm">
+            <p className=" font-semibold max-md:text-sm">Radha</p>
+            <p className=" font-sofiaSans font-light max-md:text-xs -mt-1 text-sm">
               Creative Director - Copy
             </p>
           </div>

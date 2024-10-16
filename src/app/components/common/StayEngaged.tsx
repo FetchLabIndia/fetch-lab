@@ -47,7 +47,7 @@ function StayEngaged() {
               placeholder="Enter your email address"
             />
             <Button
-              variant="cuGreen"
+              variant="cuPurple"
               className=" w-fit max-md:w-full p-2 px-5 text-lg text-black"
             >
               Sign Up

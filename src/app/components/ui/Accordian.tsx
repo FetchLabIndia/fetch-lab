@@ -18,10 +18,10 @@ export default function Accordion({
   return (
     <div className="flex flex-col w-full items-center mb-4 justify-center">
       <div
-        className="text-5xl max-sm:text-3xl border-t-2 max-md:w-full max-md:py-4 py-7 pb-3 flex w-9/12 justify-between cursor-pointer group"
+        className="text-5xl max-sm:text-3xl border-t-2 max-md:w-full max-md:py-4 py-7 pb-3 max-md:pb-1.5 flex w-9/12 justify-between cursor-pointer group"
         onClick={() => setIsExpanded(!isExpanded)}
       >
-        <p className="font-extrabold max-md:text-2xl">{title}</p>
+        <p className="font-extrabold max-md:w-full max-md:text-2xl">{title}</p>
         <div className="flex items-center gap-5">
           <motion.div
             animate={{

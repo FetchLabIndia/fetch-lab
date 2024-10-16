@@ -44,25 +44,25 @@ function WorkCarousel() {
         ref={scrollRef}
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
-        className=" relative pl-[16%] flex w-full cursor-none transition-all duration-200 scroll-smooth overflow-scroll snap-mandatory snap-x gap-5 p-4 px-28  mb-11 max-md:px-4"
+        className=" relative pl-[16%] flex w-full cursor-none transition-all duration-200 scroll-smooth overflow-scroll snap-mandatory snap-x gap-5 p-4 px-20  mb-11 max-md:px-4"
       >
         <CarouselContent>
           {[
             {
               slug: "/work/brew_mingle",
-              link: "/home/2.jpg",
+              link: "/home/1.jpg",
             },
             {
               slug: "/work/moodrobe",
-              link: "/home/4.png",
+              link: "/home/2.jpg",
             },
             {
               slug: "/work/iccs",
-              link: "/home/3.png",
+              link: "/home/3.jpg",
             },
             {
               slug: "/work/airlis",
-              link: "/home/1.jpg",
+              link: "/home/4.jpg",
             },
           ].map((work) => (
             <CarouselItem
@@ -82,7 +82,7 @@ function WorkCarousel() {
         </CarouselContent>
       </Carousel>
 
-      <div className=" flex justify-between w-full text-2xl text-white px-28 max-md:hidden -mt-11">
+      <div className=" flex justify-between w-full text-2xl text-white px-20 max-md:hidden -mt-11">
         <div
           onClick={handleScrollLeft}
           className=" rounded-full border-zinc-500 hover:border-zinc-100 transition-all duration-500 cursor-pointer border p-3"
@@ -115,7 +115,7 @@ function WorkCarousel() {
             alt="Cursor Image"
             height={800}
             width={800}
-            className=" size-8 rotate-3 w-full"
+            className=" size-12 rotate-3 w-full"
           />
         </motion.div>
       </div>

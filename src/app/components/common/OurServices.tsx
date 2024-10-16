@@ -22,7 +22,7 @@ const brandingData = [
   },
   {
     title: "Collateral, print & packaging",
-    bg: "#00BF58",
+    bg: "#A0FCE6",
   },
   {
     title: "Art direction",
@@ -51,7 +51,7 @@ const socialMediaManagement = [
     bg: "#F6C4D4",
   },
   {
-    title: "Content Creation",
+    title: "UGC Content Creation",
     bg: "#D6CBFB",
   },
   {
@@ -83,7 +83,7 @@ const socialMediaManagement = [
     bg: "#F5E9C9",
   },
   {
-    title: "Platform Management",
+    title: "Platform Management (FB, IG, Twitter, LinkedIn)",
     bg: "#AEFBBE",
   },
 ];

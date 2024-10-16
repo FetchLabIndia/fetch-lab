@@ -86,7 +86,7 @@ export const works = [
       "Creative Direction",
     ],
   },
-  { image: "/delta.png", tags: ["Coming Soon"] },
+  { image: "/delta.jpg", tags: ["Coming Soon"] },
   { image: "/Maskgroup.png", tags: ["Coming Soon"] },
 ];
 
