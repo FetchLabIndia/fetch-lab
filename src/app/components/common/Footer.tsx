@@ -78,7 +78,10 @@ function Footer() {
               >
                 <FiInstagram />
               </Link>
-              <RiTwitterXFill />
+
+              <Link href={"https://x.com/fetchlabdotin"} target="_blank">
+                <RiTwitterXFill />
+              </Link>
               <Link
                 href={"https://www.linkedin.com/company/fetchlab/"}
                 target="_blank"
