@@ -11,7 +11,7 @@ import ClientMarquee from "./components/common/ClientMarquee";
 
 function Home() {
   return (
-    <div className=" flex flex-col items-center justify-center">
+    <>
       <HeroSection />
       <WorkCarousel />
       <ClientMarquee />
@@ -22,7 +22,7 @@ function Home() {
       <StayEngaged />
       <hr className="w-full border-t border-zinc-800" />
       <Footer />
-    </div>
+    </>
   );
 }
 
