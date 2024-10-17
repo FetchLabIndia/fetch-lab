@@ -104,6 +104,7 @@ function StayEngaged() {
                   placeholder="Enter your email address"
                 />
                 <Button
+                  disabled={loading}
                   variant="cuPurple"
                   className=" w-fit max-md:w-full p-2 px-5 hover:border-[0.2rem] hover:-mt-0.5 text-lg"
                 >

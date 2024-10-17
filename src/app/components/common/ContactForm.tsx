@@ -185,7 +185,11 @@ function ContactForm() {
                 placeholder="How Can we help you?"
                 className="bg-foreground font-light font-sofiaSans text-white outline-none placeholder:text-base text-base min-h-52 rounded-2xl p-3 w-full px-5"
               ></textarea>
-              <Button variant="cuGreen" className="text-xl w-full py-1.5">
+              <Button
+                disabled={loading}
+                variant="cuGreen"
+                className="text-xl w-full py-1.5"
+              >
                 {loading ? "Please wait" : "Get in touch"}
               </Button>
             </form>
