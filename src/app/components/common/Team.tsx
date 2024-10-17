@@ -6,7 +6,7 @@ function Team() {
       <p className="font-extrabold text-4xl leading-ms tracking-ms ">
         Meet the <span className=" text-white">Visionaries</span>
       </p>
-      <div className=" flex items-center gap-6  text-base justify-center max-sm:flex-wrap max-sm:px-2">
+      <div className=" flex px-5 items-center gap-6  text-base justify-center max-sm:flex-wrap max-sm:px-2">
         <div>
           <Image
             src={"/team/Datta.png"}
