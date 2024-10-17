@@ -11,11 +11,11 @@ import { RiTwitterXFill } from "react-icons/ri";
 const bottomNav = [
   {
     title: "Work with us",
-    mail: "hello@fetchlab.com",
+    mail: "hello@fetchlab.in",
   },
   {
     title: "Join us",
-    mail: "careers@fetchlab.com",
+    mail: "careers@fetchlab.in",
   },
 ];
 function Footer() {
@@ -54,7 +54,13 @@ function Footer() {
               key={title}
               className=" flex text-white flex-col items-start gap-1.5 max-md:gap-0"
             >
-              <p className="  font-extrabold text-lg ">{title}</p>
+              <p
+                className={`  font-extrabold -mb-2.5  ${
+                  title == "Join us" && "-mb-3"
+                } text-lg `}
+              >
+                {title}
+              </p>
               <Link
                 className=" font-light max-md:-mt-1 font-sofiaSans text-lg text-zinc-200 mb-2"
                 href={`mailto:${mail}`}
@@ -63,9 +69,9 @@ function Footer() {
               </Link>
             </div>
           ))}
-          <div className=" flex text-white flex-col items-start gap-2 max-md:gap-0">
-            <p className="  font-extrabold text-lg ">follow us</p>
-            <div className=" flex items-center text-2xl gap-2">
+          <div className=" flex text-white flex-col -mt-2 items-start gap-2 max-md:gap-0">
+            <p className="  font-extrabold text-lg">follow us</p>
+            <div className=" flex items-center -mt-1.5 text-2xl gap-2">
               <Link
                 href={"https://www.instagram.com/fetchlab.in/"}
                 target="_blank"

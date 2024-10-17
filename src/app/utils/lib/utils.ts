@@ -63,22 +63,22 @@ export const blogs = [
 export const works = [
   {
     slug: "brew_mingle",
-    image: "/Brewmingle/Brewmingle-01.jpg",
+    image: "/work/1.jpg",
     tags: ["Brand identity & Design"],
   },
   {
     slug: "moodrobe",
-    image: "/Moodrobe/Moodrobe_Brand_Identity_Final-15.jpg",
+    image: "/work/2.jpg",
     tags: ["Brand identity & Design", "merchandise", "Social media Managment"],
   },
   {
     slug: "iccs",
-    image: "/ICCS/ICCS-01.jpg",
+    image: "/work/3.jpg",
     tags: ["Brand identity & Design"],
   },
   {
     slug: "airlis",
-    image: "/AmythStore/AmythBranding-02.jpg",
+    image: "/work/4.jpg",
     tags: [
       "Brand identity  & Design",
       "Social media Managment",
@@ -86,14 +86,15 @@ export const works = [
       "Creative Direction",
     ],
   },
-  { image: "/delta.jpg", tags: ["Coming Soon"] },
-  { image: "/Maskgroup.png", tags: ["Coming Soon"] },
+  { image: "/work/7.jpg", tags: ["Coming Soon"] },
+  { image: "/work/6.jpg", tags: ["Coming Soon"] },
 ];
 
 export const workInfo = [
   {
     heading: "MoodRobe",
     slug: "moodrobe",
+    gif: "/work/Moodrobe.gif",
     tags: ["Brand identity  & Design", "merchandise", "Social media Managment"],
     title: "Moodrobe: A Blank Canvas for Minimalist Fashion",
     images: [
@@ -131,15 +132,16 @@ What made this project truly satisfying was knowing that we weren’t just creat
   {
     heading: "Brew mingle",
     slug: "brew_mingle",
+    gif: "/work/Brewmingle.gif",
     tags: ["Brand identity  & Design"],
     title: "Brewing Conversations in Houston",
     images: [
-      "/Brewmingle/Brewmingle-01.jpg",
-      "/Brewmingle/Brewmingle-02.jpg",
-      "/Brewmingle/Brewmingle-03.jpg",
-      "/Brewmingle/Brewmingle-04.jpg",
-      "/Brewmingle/Brewmingle-05.jpg",
-      "/Brewmingle/Brewmingle-06.jpg",
+      "/Brewmingle/BrewMingle-01.jpg",
+      "/Brewmingle/BrewMingle-02.jpg",
+      "/Brewmingle/BrewMingle-03.jpg",
+      "/Brewmingle/BrewMingle-04.jpg",
+      "/Brewmingle/BrewMingle-05.jpg",
+      "/Brewmingle/BrewMingle-06.jpg",
     ],
     desc: `Coffee has always been more than just a drink; it’s about the moments that happen around it. That’s where Brew Mingle steps in, a brand on a mission to not only serve exceptional coffee but to create a community-driven culture in Houston. As specialty coffee gains momentum across the city, Brew Mingle is carving out its own space with a distinct focus on artisanal quality and social connection.
 <br/>
@@ -155,6 +157,7 @@ In the process, we didn’t just create a logo; we helped tell the story of a br
   {
     heading: "ICCS",
     slug: "iccs",
+    gif: "/work/ICCS.gif",
     tags: ["Brand identity  & Design"],
     title: "ICCS: Balancing Professionalism and Warmth in the BPO Space",
     images: [
@@ -186,6 +189,7 @@ A key part of our strategy was creating a design system that felt professional y
   {
     heading: "Airlis",
     slug: "airlis",
+    gif: "/work/airlis.gif",
     tags: [
       "Brand identity  & Design",
       "Social media Managment",

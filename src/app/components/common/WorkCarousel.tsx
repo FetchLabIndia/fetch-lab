@@ -30,7 +30,7 @@ function WorkCarousel() {
     <>
       {isAnimating && (
         <motion.div
-          className="fixed top-0  left-0 z-50 w-screen h-screen bg-green-500"
+          className="fixed top-0  left-0 z-50 w-screen h-screen bg-cuPurple"
           initial={{ scaleX: 0 }} // Start off-screen
           animate={{ scaleX: 1 }} // Slide in from the right
           transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
@@ -44,25 +44,25 @@ function WorkCarousel() {
         ref={scrollRef}
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
-        className=" relative pl-[16%] flex w-full cursor-none transition-all duration-200 scroll-smooth overflow-scroll snap-mandatory snap-x gap-5 p-4 px-20  mb-11 max-md:px-4"
+        className=" relative   flex w-full cursor-none transition-all duration-200 scroll-smooth overflow-scroll snap-mandatory snap-x gap-5 p-4 px-20 pl-[12%]  mb-11 max-md:px-4"
       >
         <CarouselContent>
           {[
             {
               slug: "/work/brew_mingle",
-              link: "/home/1.jpg",
+              link: "/home/1.jpeg",
             },
             {
               slug: "/work/moodrobe",
-              link: "/home/2.jpg",
+              link: "/home/2.jpeg",
             },
             {
               slug: "/work/iccs",
-              link: "/home/3.jpg",
+              link: "/home/3.jpeg",
             },
             {
               slug: "/work/airlis",
-              link: "/home/4.jpg",
+              link: "/home/4.jpeg",
             },
           ].map((work) => (
             <CarouselItem
@@ -74,7 +74,7 @@ function WorkCarousel() {
                 src={work.link}
                 width={800}
                 height={800}
-                className=" h-full max-md:object-cover w-full  object-center rounded-2xl"
+                className=" h-full max-md:object-cover w-full object-cover  rounded-2xl"
                 alt="image"
               />
             </CarouselItem>
@@ -82,7 +82,7 @@ function WorkCarousel() {
         </CarouselContent>
       </Carousel>
 
-      <div className=" flex justify-between w-full text-2xl text-white px-20 max-md:hidden -mt-11">
+      <div className=" flex justify-between w-full text-3xl text-white px-20 max-md:hidden pl-[12%] -mt-11">
         <div
           onClick={handleScrollLeft}
           className=" rounded-full border-zinc-500 hover:border-zinc-100 transition-all duration-500 cursor-pointer border p-3"
@@ -115,7 +115,7 @@ function WorkCarousel() {
             alt="Cursor Image"
             height={800}
             width={800}
-            className=" size-12 rotate-3 w-full"
+            className=" size-16 rotate-3 w-full"
           />
         </motion.div>
       </div>

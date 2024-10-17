@@ -31,7 +31,7 @@ function ContactForm() {
   };
   const [loading, setLoading] = useState<boolean>(false);
   const [submitted, setSubmitted] = useState<boolean>(false);
-  const sendMail = useCallback((e: React.FormEvent<HTMLFormElement>) => {
+  const sendMail = useCallback(async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
     const formData = new FormData(e.currentTarget);
@@ -40,13 +40,30 @@ function ContactForm() {
     formData.forEach((value, key) => {
       data[key] = value;
     });
-    setSubmitted(true);
-    setLoading(true);
-    const t = setTimeout(() => {
+
+    try {
+      setLoading(true);
+
+      const res = await fetch("http://localhost:4000/api/mail", {
+        method: "POST",
+        headers: {
+          "content-type": "application/json",
+        },
+        body: JSON.stringify(data),
+      });
+      setSubmitted(true);
+      if (res.ok) {
+        const t = setTimeout(() => {
+          setLoading(false);
+          setSubmitted(false);
+        }, 3000);
+        return () => clearTimeout(t);
+      }
+    } catch (e) {
+      console.log(e);
+    } finally {
       setLoading(false);
-      setSubmitted(false);
-    }, 3000);
-    return () => clearTimeout(t);
+    }
   }, []);
   return (
     <div

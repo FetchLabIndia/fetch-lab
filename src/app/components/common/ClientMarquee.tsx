@@ -22,7 +22,7 @@ function ClientMarquee() {
         <p>Clients we&apos;ve partnered with</p>
       </div>
       <div className=" w-full mt-20">
-        <Marquee className="[--duration:40s]">
+        <Marquee className="[--duration:20s]">
           {images.map((url) => (
             <Image
               key={url}
@@ -36,7 +36,7 @@ function ClientMarquee() {
         </Marquee>
       </div>
       <div className=" w-full mt-10 mb-12">
-        <Marquee reverse className="[--duration:40s]">
+        <Marquee reverse className="[--duration:20s]">
           {revers.map((url) => (
             <Image
               key={url}

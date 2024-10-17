@@ -4,7 +4,7 @@ function Team() {
   return (
     <div className=" flex w-full mb-8 items-center flex-col justify-center gap-7 text-white">
       <p className="font-extrabold text-4xl leading-ms tracking-ms ">
-        Meet the <span className=" text-cuGreen">Visionaries</span>
+        Meet the <span className=" text-cuPurple">Visionaries</span>
       </p>
       <div className=" flex items-center gap-6  text-base justify-center max-sm:flex-wrap max-sm:px-2">
         <div>
@@ -18,7 +18,7 @@ function Team() {
             />
           </div>
           <div className=" mt-2">
-            <p className=" font-semibold max-md:text-sm">Aniket Grover</p>
+            <p className=" font-medium max-md:text-sm">Aniket Grover</p>
             <p className=" font-sofiaSans font-light max-md:text-xs -mt-1 text-sm">
               Growth Consultant
             </p>
@@ -35,7 +35,7 @@ function Team() {
             />
           </div>
           <div className=" mt-2">
-            <p className=" font-semibold max-md:text-sm">Amit kumar Gothwal</p>
+            <p className=" font-medium max-md:text-sm">Amit kumar Gothwal</p>
             <p className=" font-sofiaSans font-light max-md:text-xs -mt-1 text-sm">
               Founder, Creative Director
             </p>
@@ -52,7 +52,7 @@ function Team() {
             />
           </div>
           <div className=" mt-2">
-            <p className=" font-semibold max-md:text-sm">Radha</p>
+            <p className=" font-medium max-md:text-sm">Radha</p>
             <p className=" font-sofiaSans font-light max-md:text-xs -mt-1 text-sm">
               Creative Director - Copy
             </p>

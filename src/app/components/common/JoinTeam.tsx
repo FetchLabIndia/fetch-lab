@@ -1,6 +1,7 @@
 import Button from "@/app/components/ui/Button";
 import useNavigation from "@/app/hooks/useNavigation";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 function JoinTeam() {
   const imageVariants = {
@@ -77,24 +78,31 @@ function JoinTeam() {
           />
         </div>
         <div className="flex max-sm:flex-col items-center gap-16 w-full justify-center">
-          <motion.div className="shake">
-            <Button
-              onClick={() => handleNavigate("/contact-us")}
-              variant="cuRed"
-              className="bg-cuRed ml-20 max-md:ml-0 hover:bg-cuRed hover:text-black border-none rotate-12 text-4xl p-3 px-6"
-            >
-              Reach out
-            </Button>
+          <motion.div className="shake cursor-pointer">
+            <Link href={"/contact-us"}>
+              <Button
+                onClick={() => handleNavigate("/contact-us")}
+                variant="cuRed"
+                className="bg-cuRed ml-20 max-md:ml-0 hover:bg-cuRed hover:text-black border-none rotate-12 text-4xl p-3 px-6"
+              >
+                Reach out
+              </Button>
+            </Link>
           </motion.div>
-          <motion.div className="shake">
-            <Button
-              onClick={() =>
-                window.open(`https://www.linkedin.com/company/fetchlab/jobs`)
-              }
-              className="-rotate-12 hover:text-black hover:bg-cuYellow border-none text-4xl p-3 px-6"
+          <motion.div className="shake cursor-pointe">
+            <Link
+              target="_blank"
+              href={"https://www.linkedin.com/company/fetchlab/jobs"}
             >
-              See openings
-            </Button>
+              <Button
+                onClick={() =>
+                  window.open(`https://www.linkedin.com/company/fetchlab/jobs`)
+                }
+                className="-rotate-12 r hover:text-black hover:bg-cuYellow border-none text-4xl p-3 px-6"
+              >
+                See openings
+              </Button>
+            </Link>
           </motion.div>
         </div>
       </div>

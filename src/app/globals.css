@@ -70,8 +70,6 @@
 }
 body {
   background-color: var(--background);
-  cursor: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIiIGhlaWdodD0iMTIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iNiIgY3k9IjYiIHI9IjYiIGZpbGw9IndoaXRlIiAvPjwvc3ZnPg=="),
-    auto;
 }
 
 *::-webkit-scrollbar {

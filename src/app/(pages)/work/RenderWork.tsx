@@ -8,24 +8,25 @@ import transition from "@/app/components/custom/Transition";
 import { works } from "@/app/utils/lib/utils";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
 export interface SlugProg {
   title: string;
   desc: string;
   tags: string[];
   heading: string;
   images: string[];
+  gif: string;
 }
 function RenderWork({ slug }: { slug: SlugProg }) {
   return (
-    <div className=" w-full mt-32 max-md:mt-28 flex flex-col items-center justify-center">
+    <div className="w-full mt-32 transition-all duration-300 max-md:mt-28 flex flex-col items-center justify-center">
       <WorkInfo
         title={slug?.title}
         desc={slug?.desc}
         tags={slug?.tags}
         heading={slug?.heading}
       />
-      <WorkImages images={slug?.images} />
+      <WorkImages images={[slug.gif]} className="-mb-2.5" />
+      <WorkImages images={slug?.images} className=" columns-2" />
       <hr className="w-full border-t border-zinc-800" />
       <div className=" text-white border-zinc-800 w-full flex justify-center items-center">
         <div className=" w-9/12 max-md:w-full max-md:px-4 max-md:text-3xl text-4xl py-11">
