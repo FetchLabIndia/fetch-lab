@@ -8,14 +8,14 @@ function WorkCard() {
         <Link
           href={`/work/${data?.slug}`}
           key={i}
-          className=" max-md:h-fit relative col-span-1 h-[469px] md:h-[400px]  w-full  rounded-2xl overflow-hidden"
+          className=" max-md:h-fit relative col-span-1  w-full  rounded-2xl overflow-hidden"
         >
           <Image
             src={data.image}
             alt="project1"
             height={400}
             width={400}
-            className=" h-full w-full object-cover max-sm:h-[350px]"
+            className=" h-full w-full object-cover "
           />
           <div className=" absolute  flex-wrap text-black flex max-sm:flex-wrap items-center gap-2.5 bottom-5 left-4">
             {data.tags.map((data, i) => (

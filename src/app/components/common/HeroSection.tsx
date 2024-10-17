@@ -1,6 +1,5 @@
 "use client";
 import Image from "next/image";
-import React, { useState } from "react";
 import Button from "../ui/Button";
 import { motion } from "framer-motion";
 import useNavigation from "@/app/hooks/useNavigation";
@@ -8,12 +7,6 @@ function HeroSection() {
   const { isAnimating, handleAnimationComplete, handleNavigate } =
     useNavigation();
 
-  const [cursorPos, setCursorPos] = useState({ x: 0, y: 0 });
-  const [isHovered, setIsHovered] = useState(false);
-
-  const handleMouseMove = (event: React.MouseEvent) => {
-    setCursorPos({ x: event.pageX, y: event.pageY });
-  };
   return (
     <>
       {isAnimating && (
@@ -27,12 +20,7 @@ function HeroSection() {
         />
       )}
 
-      <div
-        onMouseMove={handleMouseMove}
-        onMouseEnter={() => setIsHovered(true)}
-        onMouseLeave={() => setIsHovered(false)}
-        className="section-home-hero text-white w-full"
-      >
+      <div className="section-home-hero text-white w-full">
         <div className="home-hero-component w-full">
           <div className="container-home-hero w-full">
             <div className="home-hero-content flex justify-center ">
@@ -68,30 +56,6 @@ function HeroSection() {
           </div>
         </div>
       </div>
-      <motion.div
-        initial={{ opacity: 0, scale: 0 }}
-        animate={
-          isHovered ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0 }
-        }
-        transition={{ duration: 0.3 }}
-        className="absolute max-md:hidden"
-        style={{
-          left: `${cursorPos.x - 15}px`,
-          top: `${cursorPos.y - 10}px`,
-          width: "10px", // Adjust size as needed
-          height: "auto",
-          pointerEvents: "none", // Ensures mouse events go through the image
-          transform: "translate(-50%, -50%)", // Center the image on the cursor
-        }}
-      >
-        <Image
-          src="/cursordot.svg"
-          alt="Cursor Image"
-          height={10}
-          width={10}
-          className="w-full h-auto"
-        />
-      </motion.div>
     </>
   );
 }
