@@ -55,8 +55,8 @@ function Footer() {
               className=" flex text-white flex-col items-start gap-1.5 max-md:gap-0"
             >
               <p
-                className={`  font-extrabold -mb-2.5  ${
-                  title == "Join us" && "-mb-3"
+                className={`  font-extrabold md:-mb-2.5  ${
+                  title == "Join us" && "md:-mb-3"
                 } text-lg `}
               >
                 {title}
@@ -71,7 +71,7 @@ function Footer() {
           ))}
           <div className=" flex text-white flex-col -mt-2 items-start gap-2 max-md:gap-0">
             <p className="  font-extrabold text-lg">follow us</p>
-            <div className=" flex items-center -mt-1.5 text-2xl gap-2">
+            <div className=" flex items-center md:-mt-1.5 text-2xl gap-2">
               <Link
                 href={"https://www.instagram.com/fetchlab.in/"}
                 target="_blank"
