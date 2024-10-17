@@ -74,7 +74,7 @@ function WorkCarousel() {
                 src={work.link}
                 width={800}
                 height={800}
-                className=" h-full max-md:object-cover w-full object-cover  rounded-2xl"
+                className=" h-full w-full object-cover  rounded-2xl"
                 alt="image"
               />
             </CarouselItem>

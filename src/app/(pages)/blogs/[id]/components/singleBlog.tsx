@@ -16,7 +16,7 @@ export interface blogsData {
 function SingleBlog({ data }: { data: blogsData }) {
   return (
     <>
-      <div className=" text-white max-md:w-full max-md:px-4  w-9/12 py-20 pt-32">
+      <div className=" max-md:-mb-28 text-white max-md:w-full max-md:px-4  w-9/12 py-20 pt-32">
         <div className=" flex justify-between">
           <p className=" text-4xl max-md:text-xl font-extrabold w-7/12">
             {data.title}

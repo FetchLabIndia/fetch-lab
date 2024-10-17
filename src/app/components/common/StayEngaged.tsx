@@ -106,7 +106,7 @@ function StayEngaged() {
                 <Button
                   disabled={loading}
                   variant="cuPurple"
-                  className=" w-fit max-md:w-full p-2 px-5 hover:border-[0.2rem] hover:-mt-0.5 text-lg"
+                  className=" w-fit max-md:mt-1 max-md:w-full p-2 px-5 hover:border-[0.2rem] hover:-mt-0.5 text-lg"
                 >
                   {loading ? "Please wait..." : "Sign Up"}
                 </Button>

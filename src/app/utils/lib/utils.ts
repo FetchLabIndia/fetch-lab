@@ -136,12 +136,12 @@ What made this project truly satisfying was knowing that we weren’t just creat
     tags: ["Brand identity  & Design"],
     title: "Brewing Conversations in Houston",
     images: [
-      "/Brewmingle/BrewMingle-01.jpg",
-      "/Brewmingle/BrewMingle-02.jpg",
-      "/Brewmingle/BrewMingle-03.jpg",
-      "/Brewmingle/BrewMingle-04.jpg",
-      "/Brewmingle/BrewMingle-05.jpg",
-      "/Brewmingle/BrewMingle-06.jpg",
+      "/Brewmingle/Brewmingle-01.jpg",
+      "/Brewmingle/Brewmingle-02.jpg",
+      "/Brewmingle/Brewmingle-03.jpg",
+      "/Brewmingle/Brewmingle-04.jpg",
+      "/Brewmingle/Brewmingle-05.jpg",
+      "/Brewmingle/Brewmingle-06.jpg",
     ],
     desc: `Coffee has always been more than just a drink; it’s about the moments that happen around it. That’s where Brew Mingle steps in, a brand on a mission to not only serve exceptional coffee but to create a community-driven culture in Houston. As specialty coffee gains momentum across the city, Brew Mingle is carving out its own space with a distinct focus on artisanal quality and social connection.
 <br/>

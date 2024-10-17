@@ -24,7 +24,7 @@ function WorkInfo({
     <div className=" flex max-md:flex-col max-md:gap-y-4 items-start max-md:w-full max-md:px-4 w-9/12 justify-between">
       <div className=" font-extrabold gap-4 flex flex-col text-5xl text-white ">
         <p>{heading}</p>
-        <div className=" flex flex-wrap font-sofiaSans items-center gap-4">
+        <div className=" flex flex-wrap font-sofiaSans items-center gap-2.5">
           {tags.map((tag) => (
             <p
               key={tag}
