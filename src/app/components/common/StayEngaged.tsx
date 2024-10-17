@@ -39,13 +39,16 @@ function StayEngaged() {
     try {
       setLoading(true);
 
-      const res = await fetch("http://localhost:4000/api/mail", {
-        method: "POST",
-        headers: {
-          "content-type": "application/json",
-        },
-        body: JSON.stringify(data),
-      });
+      const res = await fetch(
+        "https://email-sender-beta-henna.vercel.app/api/mail",
+        {
+          method: "POST",
+          headers: {
+            "content-type": "application/json",
+          },
+          body: JSON.stringify(data),
+        }
+      );
       setSubmitted(true);
       if (res.ok) {
         const t = setTimeout(() => {
