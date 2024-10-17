@@ -8,15 +8,14 @@ function Team() {
       </p>
       <div className=" flex items-center gap-6  text-base justify-center max-sm:flex-wrap max-sm:px-2">
         <div>
-          <div className="  max-sm:w-[180px] max-sm:h-auto  rounded-2xl">
-            <Image
-              src={"/team/Datta.png"}
-              width={500}
-              height={500}
-              className=" w-[186px] h-[203px]"
-              alt="Aniket Grover"
-            />
-          </div>
+          <Image
+            src={"/team/Datta.png"}
+            width={500}
+            height={500}
+            className=" w-full h-full rounded-2xl"
+            alt="Aniket Grover"
+          />
+
           <div className=" mt-2">
             <p className=" font-medium max-md:text-sm">Aniket Grover</p>
             <p className=" font-sofiaSans font-light max-md:text-xs -mt-1 text-sm">
@@ -25,15 +24,14 @@ function Team() {
           </div>
         </div>
         <div>
-          <div className=" w-auto h-auto max-sm:w-[180px] max-sm:h-auto  rounded-2xl">
-            <Image
-              src={"/team/Amit.png"}
-              width={500}
-              height={500}
-              className=" w-[186px] h-[203px]"
-              alt="Amit kumar Gothwal"
-            />
-          </div>
+          <Image
+            src={"/team/Amit.png"}
+            width={500}
+            height={500}
+            className=" w-full h-full rounded-2xl"
+            alt="Amit kumar Gothwal"
+          />
+
           <div className=" mt-2">
             <p className=" font-medium max-md:text-sm">Amit kumar Gothwal</p>
             <p className=" font-sofiaSans font-light max-md:text-xs -mt-1 text-sm">
@@ -42,15 +40,14 @@ function Team() {
           </div>
         </div>
         <div>
-          <div className="  max-sm:w-[180px] max-sm:h-auto  rounded-2xl">
-            <Image
-              src={"/team/Radha.png"}
-              width={500}
-              height={500}
-              className=" w-[186px] h-[203px]"
-              alt="Radha"
-            />
-          </div>
+          <Image
+            src={"/team/Radha.png"}
+            width={500}
+            height={500}
+            className=" w-full h-full rounded-2xl"
+            alt="Radha"
+          />
+
           <div className=" mt-2">
             <p className=" font-medium max-md:text-sm">Radha</p>
             <p className=" font-sofiaSans font-light max-md:text-xs -mt-1 text-sm">
