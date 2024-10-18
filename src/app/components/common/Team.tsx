@@ -4,7 +4,7 @@ function Team() {
   return (
     <div className=" flex w-full  max-md:mb-6 mb-8 items-center flex-col justify-center gap-7 text-white">
       <p className="font-extrabold text-4xl text-center leading-ms tracking-ms ">
-        Meet the Visionaries
+        Meet the <br /> Visionaries
       </p>
       <div className=" flex items-center gap-6  text-base justify-center max-sm:flex-wrap max-sm:px-5">
         <div>
