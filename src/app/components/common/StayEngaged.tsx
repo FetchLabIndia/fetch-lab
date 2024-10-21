@@ -90,7 +90,7 @@ function StayEngaged() {
             }  w-full gap-4`}
           >
             {submitted ? (
-              <div className=" border-2 text-xl rounded-[1.6rem] text-center border-green-500 px-4 py-3">
+              <div className=" border-2 text-xl rounded-[1.6rem] text-center border-cuPurple px-4 py-3">
                 Thank you! Your Submission has <br /> been received
               </div>
             ) : (

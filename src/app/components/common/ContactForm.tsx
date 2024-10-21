@@ -130,10 +130,8 @@ function ContactForm() {
           } gap-4`}
         >
           {submitted ? (
-            <div className=" border w-full border-blue-700 p-0.5 rounded-full">
-              <div className=" text-white  font-extrabold text-2xl border border-green-500 max-md:text-lg max-md:text-center rounded-full px-6 py-2.5">
-                Thank you! your submission has <br /> been received
-              </div>
+            <div className=" text-white text-center  font-extrabold text-2xl border border-cuPurple max-md:text-lg max-md:text-center rounded-3xl px-2.5 py-2.5">
+              Thank you! your submission has <br /> been received
             </div>
           ) : (
             <form
@@ -187,8 +185,8 @@ function ContactForm() {
               ></textarea>
               <Button
                 disabled={loading}
-                variant="cuGreen"
-                className="text-xl w-full py-1.5"
+                variant="cuPurple"
+                className="text-xl text-white w-full py-1.5"
               >
                 {loading ? "Please wait" : "Get in touch"}
               </Button>
