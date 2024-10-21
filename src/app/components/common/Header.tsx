@@ -54,10 +54,9 @@ function Header() {
       )}
 
       <motion.header
-        className={`flex z-40 fixed max-md:px-4 max-md:left-0 top-0 max-md:w-full 
-         py-9 items-center justify-between transition-transform duration-300 ${
-           showHeader ? "translate-y-0" : "-translate-y-full"
-         }`}
+        className={`flex z-40 fixed max-md:px-4 max-md:left-0 top-0 max-md:w-full w-9/12 py-9 items-center justify-between transition-transform duration-300 ${
+          showHeader ? "translate-y-0" : "-translate-y-full"
+        }`}
         initial={{ y: 0 }}
         animate={{ y: showHeader ? 0 : -100 }}
       >
@@ -124,7 +123,7 @@ function Header() {
                 key={title}
               >
                 <Button
-                  className={"text-3xl text-white w-[240px]"}
+                  className={"text-3xl text-white py-2 w-[240px]"}
                   variant={"cuPurple"}
                 >
                   {title}
