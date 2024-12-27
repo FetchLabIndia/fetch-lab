@@ -46,9 +46,9 @@ function Team() {
             alt="Hina Sharma"
           />
           <div className=" mt-2">
-            <p className=" font-medium max-md:text-sm">Radha</p>
+            <p className=" font-medium max-md:text-sm">Heena Sharma</p>
             <p className=" font-sofiaSans font-light max-md:text-xs -mt-1 text-sm">
-              Creative Director
+              Creative Director - Copy
             </p>
           </div>
         </div>
