@@ -33,22 +33,22 @@ function Team() {
           <div className=" mt-2">
             <p className=" font-medium max-md:text-sm">Amit kumar Gothwal</p>
             <p className=" font-sofiaSans font-light max-md:text-xs -mt-1 text-sm">
-              Founder, Creative Director
+              Sr. Brand Designer
             </p>
           </div>
         </div>
         <div>
           <Image
-            src={"/team/Radha.png"}
+            src={"/team/HinaSharma.png"}
             width={500}
             height={500}
             className=" md:w-[186px] rounded-2xl md:h-[203px] w-full h-full"
-            alt="Radha"
+            alt="Hina Sharma"
           />
           <div className=" mt-2">
             <p className=" font-medium max-md:text-sm">Radha</p>
             <p className=" font-sofiaSans font-light max-md:text-xs -mt-1 text-sm">
-              Creative Director - Copy
+              Creative Director
             </p>
           </div>
         </div>
