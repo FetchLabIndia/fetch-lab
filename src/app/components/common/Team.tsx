@@ -24,7 +24,7 @@ function Team() {
         </div>
         <div>
           <Image
-            src={"/team/Amit-n.png"}
+            src={"/team/Amit.png"}
             width={500}
             height={500}
             className=" md:w-[186px] rounded-2xl md:h-[203px] w-full h-full"
