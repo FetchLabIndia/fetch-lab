@@ -33,7 +33,7 @@ function Team() {
           <div className=" mt-2">
             <p className=" font-medium max-md:text-sm">Amit kumar Gothwal</p>
             <p className=" font-sofiaSans font-light max-md:text-xs -mt-1 text-sm">
-              Sr. Brand Designer
+             Founder
             </p>
           </div>
         </div>
